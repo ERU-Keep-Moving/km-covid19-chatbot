@@ -1,0 +1,602 @@
+{
+  "intents": [
+    {
+      "tag": "selamlama",
+      "patterns": [
+        "Merhabalar",
+        "Merhaba",
+        "Selamın Aleyküm",
+        "Selamlar",
+        "Nasılsın",
+        "Naber",
+        "Selam",
+        "Günaydın"
+      ],
+      "responses": [
+        "Merhabalar :)",
+        "Seni gördüğüme sevindim",
+        "Nasıl yardımcı olabilirim"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ayrılma",
+      "patterns": [
+        "by",
+        "görüşürüz",
+        "tekrar görüşmek üzere",
+        "ben gidiyorum",
+        "bay bay",
+        "Görüşmek üzere"
+      ],
+      "responses": [
+        "görüşürüz:(",
+        "tekrar konuşmak üzere",
+        "bay bay"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bilgi",
+      "patterns": [
+        "Bu nedir?",
+        "Sen neysin ?",
+        "Sen ne işe yarasın ?",
+        "Bana ne gibi faydalar sağlaya bilirsin ?",
+        "Bu uygulamadan bana bahset",
+        "Bu chatBot ne ise yarar?"
+      ],
+      "responses": [
+        "Matematiksel ve istatistiksel yöntemler kullanarak derin öğrenme ile mevcut verilerden Covid19 ile ilgili çıkarımlar yapmayı sağlayan bir sohbet botuyum."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "korunma",
+      "patterns": [
+        "Covid19’dan nasıl korunabilirim?",
+        "Virüsten nasıl korunabilirim?",
+        "Hasta olmamak için neler yapmalıyım?"
+      ],
+      "responses": [
+        "Bu salgından korunmanın en önemli şartları:maske+mesafe",
+        "Maskeni takmalı, insanlarla 2 metreden fazla yaklaşmamalı ve ellerini sık sık yıkamalısın"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "umre",
+      "patterns": [
+        "Umreye gittim",
+        "Umreden geldim",
+        "Umreye gitmiş birini ziyaret ettim"
+      ],
+      "responses": [
+        "Umreye gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor",
+        "Risk grubunda olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "yurtdisi",
+      "patterns": [
+        "Yurt dışından geldim",
+        "Yurt dışına gittim",
+        "Ülke dışında bulundum"
+      ],
+      "responses": [
+        "Yurt dışına gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor",
+        "Risk grubunda olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hastane",
+      "patterns": [
+        "Hastaneye gittim",
+        "Hastanede bulundum"
+      ],
+      "responses": [
+        "Hastaneye gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor",
+        "Risk grubunda olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ates",
+      "patterns": [
+        "Ateşim var",
+        "Ateşim 38 derecenin üzerinde",
+        "Vücudum cok sicak"
+      ],
+      "responses": [
+        "Ateşinizin olması pek iyi bir durum değil. Başka bir belirtiniz var mı?",
+        "Ateşe ek olarak başka bir şikayetiniz var mı?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "koku",
+      "patterns": [
+        "Koku alamıyorum",
+        "Koku kaybım var"
+      ],
+      "responses": [
+        "Koku alamamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
+        "Koku alamama sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "oksuruk",
+      "patterns": [
+        "Çok öksürüyorum",
+        "Öksürük",
+        "Öksürük var"
+      ],
+      "responses": [
+        "Öksürmeniz pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
+        "Öksürük sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "nefes",
+      "patterns": [
+        "Nefes alamıyorum",
+        "Nefes darlığı yaşıyorum"
+      ],
+      "responses": [
+        "Nefes darlığı yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
+        "Nefes darlığı sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "halsizlik",
+      "patterns": [
+        "Halsizlik",
+        "Çok halsizim",
+        "Yorgunum"
+      ],
+      "responses": [
+        "Halsizlik yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
+        "Halsizlik/yorgunluk sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sikayetyok",
+      "patterns": [
+        "Yok",
+        "Hayır",
+        "Bu kadar",
+        "Bitti"
+      ],
+      "responses": [
+        "Virüsü kapmış olabilme ihtimalinizi araştırıyorum",
+        "Kontrolleri gerçekleştiriyorum"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "nedir",
+      "patterns": [
+        "Covid-19 nedir ?",
+        "Yeni Koronavirüs nedir ?",
+        "Hastalık hakkında bana bilgi verir misin ?",
+        "Covid nedir ?"
+      ],
+      "responses": [
+        "Yeni Koronavirüs (COVID-19), ilk olarak Çin’in Vuhan Eyaleti’nde Aralık ayının sonlarında solunum yolu belirtileri (ateş, öksürük, nefes darlığı) gelişen bir grup hastada yapılan araştırmalar sonucunda 13 Ocak 2020’de tanımlanan bir virüstür. Koronavirüs hastalığına COVID-19 neden olur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bulasma",
+      "patterns": [
+        "Covid-19 nasıl bulaşır ?",
+        "Yen, Koronavirüs nasıl bulaşır ?"
+      ],
+      "responses": [
+        "Hasta bireylerin öksürmeleri aksırmaları ile ortama saçılan damlacıkların solunması ile bulaşır. Hastaların solunum parçacıkları ile kirlenmiş yüzeylere dokunulduktan sonra ellerin yıkanmadan yüz, göz, burun veya ağıza götürülmesi ile de virüs alınabilir. Kirli ellerle göz, burun veya ağıza temas etmek risklidir.",
+        "Hastaların öksürmeleri ile etrafa parçacıklar yayılır. Bu parçacıklar sağlıkla bireylere kirli ellerle göz, burun veya ağız teması ile bulaşabilmektedir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tani",
+      "patterns": [
+        "Covid-19 tanısı nasıl konulur ?",
+        "Yeni Koronavirüs tanısı nasıl konulur ?",
+        "Tanı nasıl konulur ?",
+        "Ülkemizde testler mevcut mu ?",
+        "Ülkemizde tanı yapılabilir mi ?",
+        "Ülkemizde test yaptırabilir miyim ?",
+        "Tanıları hangi kuruluşlar yapmaktadır ?"
+      ],
+      "responses": [
+        "Yeni Koronavirüs tanısı için gerekli moleküler testler ülkemizde mevcuttur. Tanı testi sadece Halk Sağlığı Genel Müdürlüğü Ulusal Viroloji Referans Laboratuvarında ve belirlenmiş Halk Sağlığı Laboratuvarlarında yapılmaktadır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ilac",
+      "patterns": [
+        "Tedavi için herhangi bir ilaç var mıdır ?",
+        "Kullanıla bilececek ilaçlar nedir ?",
+        "Enfeksiyonu önlemek veya tedavi etmek için kullanıla bilecek ilaç var mıdır ?",
+        "Hangi ilaçları almalıyım ?",
+        "Hangi ilaçları kullanmam gereklidir ?"
+      ],
+      "responses": [
+        "Hastalığın virüse etkili bir tedavisi yoktur. Hastanın genel durumuna göre gerekli destek tedavisi uygulanmaktadır. Bazı ilaçların virüs üzerindeki etkinliği araştırılmaktadır. Ancak şu an için virüse etkili bir ilaç yoktur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "antibiyotik",
+      "patterns": [
+        "Antibiyotikler Covid-19 enfeksiyonunu önleyebilir mi veya tedavi edebilir mi ?",
+        "Antibiyotikler Yeni Koronavirüs enfeksiyonunu önleyebilir mi veya tedavi edebilir mi ?",
+        "Antibiyotikler tedavi edebilir mi ?",
+        "Antibiyotik kullanabilir miyim ?",
+        "Antibiyotikler faydalı mıdır ?",
+        "Antibiyotik aldım iyileşmiş olabilir miyim ?",
+        "Virüsler antibiyotikler ile tedavi edilebilir mi ?"
+      ],
+      "responses": [
+        "Hayır, antibiyotikler virüslere etki etmez, sadece bakterilere karşı etkilidir. Yeni Koronavirüs (2019-nCoV) bir virüstür ve bu nedenle enfeksiyonu önlemek veya tedavi etmek amacıyla antibiyotikler kullanılmamalıdır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "kulucka",
+      "patterns": [
+        "Covid-19 kuluçka süresi ne kadardır ?",
+        "Yeni Koronavirüs kuluçka süresi ne kadardır ?",
+        "Kuluçka süresi ne kadardır ?",
+        "İnkübasyon süresi ne kadardır ?"
+      ],
+      "responses": [
+        " Virüsün kuluçka süresi 2 gün ile 14 gün arasındadır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "belirtiler",
+      "patterns": [
+        "Covid-19 belirtileri nelerdir ?",
+        "Yeni Koronavirüs belirtileri nelerdir ?",
+        "Covid-19 hangi hastalıkları oluşturur ?",
+        "Yeni Koronavirüs hangi hastalıkları oluşturur ?",
+        "Belirtileri nelerdir ?",
+        "Hastalıkları nelerdir ?"
+      ],
+      "responses": [
+        "Belirtisiz olgular olabileceği bildirilmekle birlikte, bunların oranı bilinmemektedir. En çok karşılaşılan belirtiler ateş, öksürük ve nefes darlığıdır. Şiddetli olgularda zatürre, ağır solunum yetmezliği, böbrek yetmezliği ve ölüm gelişebilmektedir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "etkiGruplari",
+      "patterns": [
+        "Covid-19 kimleri daha fazla etkiler ?",
+        "Yeni Koronavirüs kimleri daha fazla etkiler ?",
+        "Kimleri daha fazla etkiler ?",
+        "Kimler daha fazla risk altında ?",
+        "Risk grupları nelerdir ?",
+        "Etki grupları nelerdir ?"
+      ],
+      "responses": [
+        "Elde edilen veriler doğrultusunda ileri yaş ve eşlik eden hastalığı (astım, diyabet, kalp hastalığı gibi) olanlarda virüsün ağır hastalık oluşturma riski daha yüksektir. Bugünkü verilerle hastalığın %10-15 olguda ağır seyrettiği, yaklaşık %2 olguda da ölümle sonuçlandığı bilinmektedir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "aniOlum",
+      "patterns": [
+        "Ani ölümlere neden olur mu ?",
+        "Covid-19 ani ölümlere neden olur mu ?",
+        "Yeni Koronavirüs ani ölümlere neden olur mu ?",
+        "Ani ölüm olabilir mi ?",
+        "Aniden ölüp düşen kişiler gerçek mi ?",
+        "Aniden düşüp ölebilir miyim ?",
+        "Sosyal medyadaki ani ölümler gerçek mi ?"
+      ],
+      "responses": [
+        "Hastalanan kişilerle ilgili yayımlanmış verilere göre hastalık nispeten yavaş bir seyir göstermektedir. İlk birkaç gün daha hafif şikayetler (ateş, boğaz ağrısı, halsizlik gibi) görülmekte sonrasında öksürük, nefes darlığı gibi belirtiler eklenmektedir. Hastalar genellikle 7 günden sonra hastaneye başvuracak kadar ağırlaşmaktadır. Dolayısı ile sosyal medyada yer alan, birden bire yere düşüp hastalanan veya ölen hastalarla ilgili videolar gerçeği yansıtmamaktadır.",
+        "Aniden düşüp ölmezsiniz. Yapılan araştırmalar doğrultusunda bu tarz sosyal medya videoları gerçek dışıdır."
+      ],
+      "context_set": "ilkVaka"
+    },
+    {
+      "tag": "ilkVaka",
+      "patterns": [
+        "Ülkemizde ilk vaka ne zaman tespit edildi ?",
+        "Ülkemizde vaka var mıdır ?",
+        "Türkiye'de belirlenen ilk Covid-19 vakası ne zaman tespit edildi ?",
+        "İlk vaka hangi tarihte tespit edildi ?",
+        "Vaka sayılarını kim yayınlamaktadır ?",
+        "Türkiye'de belirlenen ilk Yeni Koronavirüs vakası ne zaman tespit edildi ?"
+      ],
+      "responses": [
+        "Ülkemizde Yeni Koronavirüs (COVID-19) hastalığı 10 Mart 2020 tarihinde ilk pozitif vaka saptanmıştır. Vaka sayıları ile ilgili günlük olarak bilgilendirmeler Bakanlığımız aracılığı ile yapılacaktır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sirke",
+      "patterns": [
+        "Sirke kullanımı Covid-19 enfeksiyonunu önleyebilir mi ?",
+        "Sirke enfeksiyonu önleye bilir mi ?",
+        "Sirke ile enfeksiyom engellene bilir mi ?",
+        "Sirke kullanımı ne kadar etiklidir ?",
+        "Sirke kullanımı Yeni Koronavirüs enfeksiyonunu önleyebilir mi ?"
+      ],
+      "responses": [
+        "Hayır. Sirke kullanımının Yeni Koronavirüs (COVID-19) enfeksiyonundan korunmada bir faydası yoktur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tuzluSuBurun",
+      "patterns": [
+        "Burnumu tuzlu suyla yıkamak Covid-19 enfeksiyonundan beni korur mu ?",
+        "Burnumu tuzlu suyla yıkamak Yeni Koronavirüs enfeksiyonundan beni korur mu ?",
+        "Tuzlu su Covid-19 için etkili midir ?",
+        "Burunu tuzlu su kullanımı ile temizlemek korur mu ?"
+      ],
+      "responses": [
+        "Hayır. Burnu tuzlu suyla düzenli olarak yıkamanın Yeni Koronavirüs (COVID-19) enfeksiyonundan korunmada bir faydası yoktur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hayvanTasima",
+      "patterns": [
+        "Evimde bulunan hayvanda Covid-19 var mıdır ?",
+        "Evcil hayvanlardan Covid-19 bulaşır mı ?",
+        "Evcil hayavanlar Covid-19 taşır mı ?"
+      ],
+      "responses": [
+        "Evde bakılan kedi/köpek gibi evcil hayvanların Yeni Koronavirüsla (COVID-19) enfekte olması beklenmemektedir. Ancak evcil hayvanlarla temas sonrası her zaman için ellerin su ve sabunla yıkanması gereklidir. Böylece hayvanlardan bulaşabilecek diğer enfeksiyonlara karşı korunma sağlanacaktır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "yurtlar",
+      "patterns": [
+        "Tatil dönüşü yurduma dönüyorum Covid-19 kapabilir miyim ?",
+        "Covid-19 yurtlarda kalan öğrencilere bulaşabilir mi ?",
+        "Öğrenciler için yurtlar güvenli midir ?",
+        "Yurtlarda kalmak ne kadar güvenlidir ?"
+      ],
+      "responses": [
+        "Ülkemizde Koronavirüs vakası görülmesi nedeniyle yurtlar, kapalı alanlar, toplu yaşanan yerler risk oluşturabilir. Yüksek Öğretim Kurumu, Kredi Yurtlar Kurumu ve benzeri öğrencilerin kaldığı yurtlarda hastalık konusunda gerekli önlemler alınmış ve bilgilendirme Sağlık Bakanlığı tarafından yapılmıştır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "okulTemizligi",
+      "patterns": [
+        "Okulların temizliği ne şekilde yapılmalıdır ?",
+        "Okullar nasıl temizlenmelidir ?",
+        "Okullarda hangi tür temizlik malzemeleri kullanılmalıdır ?",
+        "Okullarda temizlikte nereler temizlenmelidir ?"
+      ],
+      "responses": [
+        "Okulların temizliğinde su ve deterjanla standart temizlik yapılması yeterlidir. Özellikle eller ile sık dokunulan yüzeyler kapı kolları, bataryalar, tırabzanlar, tuvalet ve lavabo temizliğine dikkat edilmelidir. Bu virüse özel olarak etkili olduğu öne sürülen bir takım ürünlerin temizlikte kullanılmasının fazladan koruma sağladığına dair bilimsel kanıt yoktur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "cocukOkul",
+      "patterns": [
+        "Çocuğumu okula gönderiyorum Covid-19 kapabilir mi ?",
+        "Çocuğum için okul ne kadar güvenlidir ?",
+        "Çocuklar okullardan Covid-19 kapabilir mi ?",
+        "Covid-19 okullardan yayılır mı ?"
+      ],
+      "responses": [
+        "Çocuğunuz okulda grip, nezle ve soğuk algınlığına neden olan virüsler ile karşılaşabilir. Bu kapsamda okullara hastalık konusunda gerekli bilgilendirme Sağlık Bakanlığı tarafından yapılmıştır. MEB tarafından koruma ve kontrol önlemleri uygulanmaktadır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "korunmaOnlemleri",
+      "patterns": [
+        "Covid-19'dan nasıl korunabilirim ?",
+        "Covid-19'dan korunma önlemleri nelerdir ?",
+        "Genel enfeksiyon korunma önlemleri nelerdir ?",
+        "Covid-19'dan korunmak mümkün müdür ?"
+      ],
+      "responses": [
+        "El temizliğine dikkat edilmelidir. Eller en az 20 saniye boyunca sabun ve suyla yıkanmalı, sabun ve suyun olmadığı durumlarda alkol bazlı el antiseptikleri kullanılmalıdır. Antiseptik veya antibakteriyel içeren sabun kullanmaya gerek yoktur, normal sabun yeterlidir.Öksürme veya hapşırma sırasında burun ve ağızın tek kullanımlık kağıt mendil ile örtülmesi, kağıt mendilin bulunmadığı durumlarda ise dirsek içinin kullanılması, mümkünse kalabalık yerlere girilmemesi önerilir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "magazaCalisanlari",
+      "patterns": [
+        "Turistlerin geldiği restorantlarda, mağazalarda çalışanlar ne gibi önlemler almalıdır?",
+        "Mağaza çalışanları ne gibi önlemler almalıdır ?",
+        "Mağaza çalışanıyım ne gibi önlemler almam gereklidir ?",
+        "Mağaza çalışanları için önlemler nelerdir ?"
+      ],
+      "responses": [
+        "Genel enfeksiyondan korunma önlemleri alınmalıdır.",
+        "El temizliğine dikkat edilmelidir. Eller en az 20 saniye boyunca sabun ve suyla yıkanmalı, sabun ve suyun olmadığı durumlarda alkol bazlı el antiseptikleri kullanılmalıdır. Antiseptik veya antibakteriyel içeren sabun kullanmaya gerek yoktur, normal sabun yeterlidir.",
+        "Yüzey temizliğinde su ve deterjanla standart temizlik yapılması yeterlidir. Özellikle eller ile sık dokunulan yüzeyler kapı kolları, bataryalar, tırabzanlar, tuvalet ve lavabo temizliğine dikkat edilmelidir. Bu virüse özel olarak etkili olduğu öne sürülen bir takım ürünlerin temizlikte kullanılmasının fazladan koruma sağladığına dair bilimsel kanıt yoktur.",
+        "Erişilebilir yerlere alkol bazlı el antiseptiği konulması uygundur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "havaAlaniCalisanlari",
+      "patterns": [
+        "Turistlerin geldiği havaalanlarında çalışanlar ne gibi önlemler almalıdır?",
+        "Havaalanı çalışanları ne gibi önlemler almalıdır ?",
+        "Havaalanı çalışanıyım ne gibi önlemler almam gereklidir ?",
+        "Havaalanı çalışanları için önlemler nelerdir ?"
+      ],
+      "responses": [
+        "Genel enfeksiyondan korunma önlemleri alınmalıdır.",
+        "El temizliğine dikkat edilmelidir. Eller en az 20 saniye boyunca sabun ve suyla yıkanmalı, sabun ve suyun olmadığı durumlarda alkol bazlı el antiseptikleri kullanılmalıdır. Antiseptik veya antibakteriyel içeren sabun kullanmaya gerek yoktur, normal sabun yeterlidir.",
+        "Yüzey temizliğinde su ve deterjanla standart temizlik yapılması yeterlidir. Özellikle eller ile sık dokunulan yüzeyler kapı kolları, bataryalar, tırabzanlar, tuvalet ve lavabo temizliğine dikkat edilmelidir. Bu virüse özel olarak etkili olduğu öne sürülen bir takım ürünlerin temizlikte kullanılmasının fazladan koruma sağladığına dair bilimsel kanıt yoktur.",
+        "Erişilebilir yerlere alkol bazlı el antiseptiği konulması uygundur."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bebekler",
+      "patterns": [
+        "Bebekler için hangi tipte antiseptik kullanmalıyım?",
+        "Bebeklerde temizlik nasıl olmalıdır ? ",
+        "Derin Öğrenme içi hangi kitaplar okunmalı"
+      ],
+      "responses": [
+        "Bebeklerde sabun ve izotonik su bazlı dezenfektanlar tercih edilmelidir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bebekler",
+      "patterns": [
+        "Bebekler de hastalık ne ölçüde seyretmektedir?",
+        "Bebeklerde belirtiler aynı mıdır ?"
+      ],
+      "responses": [
+        "Bebeklerde belirtiler daha hafif seyretmekle birlikte ateş daha sık görülmektedir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bebekler",
+      "patterns": [
+        "Bebekler de ne gibi önlemler alınabilir?",
+        "Bebeklerde kurallar aynı mıdır ?"
+      ],
+      "responses": [
+        "Genel temizliğe daha fazla dikkat edilmeli ve emzik gibi bebeklerle fazla teması olan nesneler sık sık dezenfekte edilmeli."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "deniz",
+      "patterns": [
+        "Denizden Covid19 bulaşır mı ?",
+        "Covid19 akarsulardan bulaşır mı ?"
+      ],
+      "responses": [
+        "Kesin olmamakla beraber hastalık genelinde denizden herhangi bir bulaş tespit edilmemiştir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "havuz",
+      "patterns": [
+        "Havuzdan Covid19 bulaşır mı ?",
+        "Yüzerken bulaşır mı ?"
+      ],
+      "responses": [
+        "Havuzlarda klorlamaya ve temizliğe önem verilmelidir. Ancak yine de bununla alakalı kesin bir yargı mevcut değildir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "havuz",
+      "patterns": [
+        "Havuzdan Covid19 bulaşır mı ?",
+        "Yüzerken bulaşır mı ?"
+      ],
+      "responses": [
+        "Havuzlarda klorlamaya ve temizliğe önem verilmelidir. Ancak yine de bununla alakalı kesin bir yargı mevcut değildir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bağışıklık",
+      "patterns": [
+        "Bağışıklık güçlendirici internette satılan ilaçlardan edinmeli miyim ?",
+        "Nasıl bağışıklığımı arttırırım?"
+      ],
+      "responses": [
+        "Covid19 hastalığı etki eşiğinde bağışıklık oldukça önemlidir. Bu yüzden ek bir alerjik reaksiyon vb. gösterme durumlarına karşı temkinli olmak adına doktorunuza başvurunuz.",
+        "Hekim desteği alınız, tüm bağışıklık güçlendirici ilaçlar aynı etkiyi göstermemektedir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "kına",
+      "patterns": [
+        "Kına Covid19 virüsüne etki eder mi?"
+      ],
+      "responses": [
+        "Hayır hiçbir etkisi yoktur",
+        "Doktor onayı olmayan hiçbir etken maddeyi kullanmamaya özen gösteriniz."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "elYikama",
+      "patterns": [
+        "El hijyeni nasıl sağlanır ?",
+        "El yıkama işlemi nasıl gerçekleştirilmelidir ?",
+        "El yıkama işlemini nasıl yapmalıyım ?",
+        "Ellerimi ne kadar süre yıkamalıyım ?",
+        "Ellerimi nasıl yıkamalıyım ?"
+      ],
+      "responses": [
+        "Ellerde gözle görülür kirlenme varsa en az 20 saniye bol su ve sabunla yıkanır ve kağıt havlu ile kurulanır. Gözle görülür kirlenme yoksa su ve sabun yerine alkol bazlı el antiseptiği ile ovalanarak da el hijyeni sağlanabilir"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "n95Maske",
+      "patterns": [
+        "N95 maske ne zaman takılmalıdır ?",
+        "N95 maske hangi durumlarda takılmalıdır"
+      ],
+      "responses": [
+        "Aerosol oluşumuna yol açan işlemler yapılacağı her durumda; N95 veya FFP2 maske, gözlük veya yüz koruyucu, uzun kollu sıvı geçirmez steril olmayan önlük ve eldiven kullanılmalıdır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "aerosol",
+      "patterns": [
+        "Aerosol oluşumuna yol açan işlemler nelerdir ?",
+        "Aerosol oluşumu nasıl olur ?"
+      ],
+      "responses": [
+        "Trakeal aspirasyon, bronkoskopi ve bronkoskopik işlemler, balgam indüksiyonu, entubasyon, solunum yolu numunesi alınması, otopsi ve ölü yıkama aerosol oluşumuna yol açan işlemlerdir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tehlikeliUlkeler",
+      "patterns": [
+        "Çin dışında hangi ülkeler risk taşıyor?",
+        "Hangi ülkelere gitmemeliyim?",
+        "Çin dışında riskli olan ülkeler"
+      ],
+      "responses": [
+        "Hastalık Çin Halk Cumhuriyet’inde ortaya çıkmış ve birçok ülkeye yayılmıştır. Tüm dünyada hastalık görülmektedir. Dünya Sağlık Örgütü tarafından pandemi olarak kabul edilmiştir. Sağlık Bakanlığı Bilimsel Danışma Kurulu vaka görülen ülkelere “mecbur kalınmadıkça gidilmemesi” uyarısında bulunmaktadır. Seyahat edeceklerin ulusal ve uluslararası otoritelerin uyarılarını takip etmeleri gerekir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "saglikBakanligiCalismalari",
+      "patterns": [
+        "Sağlık Bakanlığı önlemleri nelerdir?",
+        "Sağlık Bakanlığı’nın gerçekleştirdiği çalışmalar",
+        "Bakanlık çalışmaları"
+      ],
+      "responses": [
+        "Bakanlığımız tarafından hastalıkla ilgili dünyadaki gelişmeler ve hastalığın uluslararası yayılımı yakından takip edilmektedir. Yeni Koronavirüs (COVID-19) Bilim Kurulu oluşturulmuştur. Yeni Koronavirüs (COVID-19) hastalığına yönelik Risk Değerlendirme ve Bilim Kurulu toplantıları yapılmıştır. Konunun tüm tarafları (Türkiye Hudut ve Sahiller Sağlık Genel Müdürlüğü, Kamu Hastaneleri Genel Müdürlüğü, Acil Sağlık Hizmetleri Genel Müdürlüğü, Dış İlişkiler Genel Müdürlüğü, gibi tüm paydaşlar) sürece dahil ederek olay takip edilmeye ve toplantılar düzenli şekilde yapılmaya devam etmektedir.Halk Sağlığı Genel Müdürlüğü bünyesindeki Halk Sağlığı Acilleri Operasyon Merkezi’nde 7/24 esasına göre çalışan ekipler oluşturulmuştur. Ülkemizde, Dünya Sağlık Örgütü’nün önerileri ile paralel olarak gerekli önlemler alınmıştır. Havalimanları ve deniz giriş noktaları gibi Ülkemizin giriş noktalarında riskli bölgelerden gelebilecek hasta yolcuların tespitine yönelik önlemler alınmış ve hastalık şüphesi varlığında yapılması gerekenler belirlenmiştir. ÇHC ile direkt uçuşlar 1 Mart tarihine kadar durdurulmuştur. Başlangıçta ÇHC’den gelen yolcular için uygulanmakta olan termal kamera ile tarama uygulaması, 05 Şubat 2020 itibariyle diğer ülkeleri de kapsayacak şekilde genişletilmiştir.Hastalığa yönelik tanı, olası vakada uygulanacak prosedürler, korunma ve kontrol önlemleri ile ilgili bir rehber hazırlanmıştır. Tespit edilen vakalara yönelik yönetim algoritmaları oluşturulmuştur ve ilgili tarafların görev ve sorumlulukları tanımlanmıştır. Rehberde ayrıca vaka görülen ülkelere gidecek veya oralardan gelecek kişilerin yapması gerekenler de yer almaktadır. Sürekli güncellenen bu rehbere ve rehberle ilgili sunumlara, sık sorulan soruların cevaplarına, afiş ve broşürlere Halk Sağlığı Genel Müdürlüğü’nün resmi web sitesinden ulaşılabilmektedir. Ayrıca olası vaka tanımına uyan kişilerden solunum yolu numunesi alınarak numune sonucu çıkana kadar sağlık tesisi koşullarında izole edilmektedir."
+      ],
+      "context_set": ""
+    }
+  ]
+}
