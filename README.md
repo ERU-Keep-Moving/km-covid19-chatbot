@@ -3,6 +3,7 @@ This project developed for Teknofest 2020 (Türkçe Doğal Dil İşleme Yarışm
 
 Requirements
 1-) Python: Python 3.6.7 Version
+
 2-) Librarires
   2.1-) NLTK v3.5: "pip install nltk==3.5"
   2.2-) snowballstemmer v2.0.0 : "pip install snowballstemmer==2.0.0"
