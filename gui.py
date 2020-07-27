@@ -1,7 +1,6 @@
 import agirlikTest
 
 #Creating GUI with tkinter
-import tkinter
 from tkinter import *
 
 
@@ -22,7 +21,7 @@ def send():
 
 
 base = Tk()
-base.title("Hello")
+base.title("Keep Moving")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
