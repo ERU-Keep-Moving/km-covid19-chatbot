@@ -118,7 +118,7 @@ cevapListesi = []
 def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
-    if message.lower() == "kapat":
+    if message.lower() == "hoşçakal" or message.lower() == "kapat":
         return sonuc(covidOlasilikDurumu, covidRiskDurumu)
     results = model.predict(np.asanyarray([bag_of_words(message, words)]))[0]
     # print(results)
