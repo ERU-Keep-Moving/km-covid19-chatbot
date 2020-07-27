@@ -15,24 +15,42 @@
       "responses": [
         "Merhabalar :)",
         "Seni gördüğüme sevindim",
-        "Nasıl yardımcı olabilirim"
+        "Nasıl yardımcı olabilirim ?"
       ],
       "context_set": ""
     },
     {
-      "tag": "ayrılma",
+      "tag": "ayrilma",
       "patterns": [
-        "by",
-        "görüşürüz",
-        "tekrar görüşmek üzere",
-        "ben gidiyorum",
-        "bay bay",
+        "Bye bye",
+        "Bye",
+        "By by",
+        "By ",
+        "Görüşürüz",
+        "Tekrar görüşmek üzere",
+        "Ben gidiyorum",
+        "Bay Bay",
         "Görüşmek üzere"
       ],
       "responses": [
-        "görüşürüz:(",
-        "tekrar konuşmak üzere",
-        "bay bay"
+        "İyi Günler. Durumunuz değerlendiriliyor."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sonuc",
+      "patterns": [
+        "Sonuçlarım neledir ?",
+        "Sonuçlar",
+        "Sonuç",
+        "Sonuçlar nasıl ?",
+        "Sonuçlar görüntüle",
+        "Risk durumum nedir ?",
+        "Covid-19 risk oranım nedir ?",
+        "Risk durumum yüzde kaç ?"
+      ],
+      "responses": [
+        "Sonuçlarınız bu şekildedir."
       ],
       "context_set": ""
     },
@@ -40,14 +58,17 @@
       "tag": "bilgi",
       "patterns": [
         "Bu nedir?",
+        "Bu uygulama ne işe yarar ?",
         "Sen neysin ?",
+        "Bana nasıl yardımcı olabilirsin ?",
+        "Maharetlerin nelerdir ?",
         "Sen ne işe yarasın ?",
         "Bana ne gibi faydalar sağlaya bilirsin ?",
         "Bu uygulamadan bana bahset",
         "Bu chatBot ne ise yarar?"
       ],
       "responses": [
-        "Matematiksel ve istatistiksel yöntemler kullanarak derin öğrenme ile mevcut verilerden Covid19 ile ilgili çıkarımlar yapmayı sağlayan bir sohbet botuyum."
+        "Matematiksel ve istatistiksel yöntemler kullanarak derin öğrenme ile mevcut verilerden Covid-19 ile ilgili çıkarımlar yapmayı sağlayan bir sohbet botuyum. Keep Moving Ekibi tarafından Teknofest Doğal Dil İşleme yarışması kapsamında tasarlandım."
       ],
       "context_set": ""
     },
@@ -56,11 +77,12 @@
       "patterns": [
         "Covid19’dan nasıl korunabilirim?",
         "Virüsten nasıl korunabilirim?",
+        "Nasıl korunabilirim?",
         "Hasta olmamak için neler yapmalıyım?"
       ],
       "responses": [
-        "Bu salgından korunmanın en önemli şartları:maske+mesafe",
-        "Maskeni takmalı, insanlarla 2 metreden fazla yaklaşmamalı ve ellerini sık sık yıkamalısın"
+        "Bu salgından korunmanın en önemli şartları : maske ve sosyal mesafedir.",
+        "Maskeni takmalı, insanlarla 2 metreden fazla yaklaşmamalı ve ellerini sık sık yıkamalısın."
       ],
       "context_set": ""
     },
@@ -69,11 +91,15 @@
       "patterns": [
         "Umreye gittim",
         "Umreden geldim",
-        "Umreye gitmiş birini ziyaret ettim"
+        "Umreye gitmiş birini ziyaret ettim",
+        "Umreden 1 ay önce geldim",
+        "Umreden 2 ay önce geldim",
+        "Umreden 3 ay önce geldim",
+        "Umreden 4 ay önce geldim"
       ],
       "responses": [
-        "Umreye gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor",
-        "Risk grubunda olabilirsiniz"
+        "Umreye gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor. Öksürüğünüz veya ateşiniz var mı ?. Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Risk grubunda olabilirsiniz. Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -82,11 +108,13 @@
       "patterns": [
         "Yurt dışından geldim",
         "Yurt dışına gittim",
+        "15 gün önce yurt dışından geldim",
+        "2 hafta önce yurt dışından geldim",
         "Ülke dışında bulundum"
       ],
       "responses": [
-        "Yurt dışına gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor",
-        "Risk grubunda olabilirsiniz"
+        "Yurt dışına gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor. Öksürüğünüz veya ateşiniz var mı ? Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Risk grubunda olabilirsiniz. Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -94,11 +122,14 @@
       "tag": "hastane",
       "patterns": [
         "Hastaneye gittim",
+        "Hasta ziyaretine gittim",
+        "Hastanede hasta ziyaretine gittim",
+        "Son haftalarda hastaneye gittim",
         "Hastanede bulundum"
       ],
       "responses": [
-        "Hastaneye gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor",
-        "Risk grubunda olabilirsiniz"
+        "Hastaneye gitmiş veya giden biriyle bir temasta bulunduysanız, herhangi bir belirtinizin olup olmadığına daha detaylı bakmam gerekiyor. Öksürüğünüz veya ateşiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Risk grubunda olabilirsiniz. Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -107,23 +138,33 @@
       "patterns": [
         "Ateşim var",
         "Ateşim 38 derecenin üzerinde",
-        "Vücudum cok sicak"
+        "Ateşim yüksek",
+        "Başım alev gibi yanıyor",
+        "Vücudum çok sıcak"
       ],
       "responses": [
-        "Ateşinizin olması pek iyi bir durum değil. Başka bir belirtiniz var mı?",
-        "Ateşe ek olarak başka bir şikayetiniz var mı?"
+        "Ateşinizin olması pek iyi bir durum değil. Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Ateşe ek olarak başka bir şikayetiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
     {
-      "tag": "koku",
+      "tag": "kokuTat",
       "patterns": [
         "Koku alamıyorum",
+        "Yemeklerin kokusunu alamıyorum",
+        "Yediğim şeylerin kokusunu alamıyorum",
+        "Yemiş olduğum ürünlerin kokusu yok gibi",
+        "Koku alma duyumu kaybettim sanki",
+        "Tat alamıyorum",
+        "Yemeklerin tadını alamıyorum",
+        "Yemekler tatsız geliyor",
+        "Ağızımın tatı yok",
         "Koku kaybım var"
       ],
       "responses": [
-        "Koku alamamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
-        "Koku alamama sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+        "Koku alamamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Koku alamama sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -132,11 +173,14 @@
       "patterns": [
         "Çok öksürüyorum",
         "Öksürük",
+        "Kuru öksürüğüm var",
+        "Ara ara kuru öksürüğüm var",
+        "Geçmeyen öksürüğüm var",
         "Öksürük var"
       ],
       "responses": [
-        "Öksürmeniz pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
-        "Öksürük sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+        "Öksürmeniz pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Öksürük sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -144,11 +188,43 @@
       "tag": "nefes",
       "patterns": [
         "Nefes alamıyorum",
+        "Nefes alırken zorlanıyorum",
+        "Solunum güçlüğü yaşıyorum",
+        "Nefes darlığım var",
+        "Nefes alamıyorum",
         "Nefes darlığı yaşıyorum"
       ],
       "responses": [
-        "Nefes darlığı yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
-        "Nefes darlığı sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+        "Nefes darlığı yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Nefes darlığı sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hareketKaybi",
+      "patterns": [
+        "Hareket ederken zorlanıyorum",
+        "Hareket zorluğu yaşıyorum",
+        "Hareket ederken bacaklarım ve kollarım ağrıyor"
+      ],
+      "responses": [
+        "Hareket kaybı yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Hareket kaybı sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "konusmaZorlugu",
+      "patterns": [
+        "Konuşurken zorlanıyorum",
+        "Konuşurken yoruluyorum",
+        "Konuşmakta yoruluyorum",
+        "Konuşma kaybı yaşıyorum",
+        "Konuşurken güçlük çekiyorum"
+      ],
+      "responses": [
+        "Konuşma zorluğu yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Konuşma zorluğu sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -157,25 +233,132 @@
       "patterns": [
         "Halsizlik",
         "Çok halsizim",
+        "Bu sıralar çok halsizim",
+        "Halsizim",
         "Yorgunum"
       ],
       "responses": [
-        "Halsizlik yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı?",
-        "Halsizlik/yorgunluk sorununa ek olarak başka bir şikayetiniz var mı? olabilirsiniz"
+        "Halsizlik yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
     {
-      "tag": "sikayetyok",
+      "tag": "basAgrisi",
+      "patterns": [
+        "Ağrılarım var",
+        "Kafam ağrıyor",
+        "Başım ağrıyor",
+        "Ağrılarım geçmiyor",
+        "Ara ara ağrılarım oluyor"
+      ],
+      "responses": [
+        "Covid-19 hastalarında nadiren baş ağrıları veya ağrılar görülebiliyor. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "gogusAgrisi",
+      "patterns": [
+        "Göğsüm ağrıyor ",
+        "Göğüs ağrım var",
+        "Göğsümde baskı var",
+        "Göğsümde baskı hissediyorum",
+        "Ara ara göğüs ağrılarım oluyor"
+      ],
+      "responses": [
+        "Covid-19 hastalarında göğüs ağrıları görülebiliyor. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "bogazAgrisi",
+      "patterns": [
+        "Boğazım ağrıyor",
+        "Yutkunurken zorlanıyorum",
+        "Ara ara boğazım ağrıyor",
+        "Bazen boğazım ağrıyor"
+      ],
+      "responses": [
+        "Covid-19 hastalarında nadiren boğaz ağrısı belirtisi görülür. Başka bir belirtiniz var mı?. Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ishal",
+      "patterns": [
+        "İshalim",
+        "Karın ağrım var ishalim",
+        "Ara ara ishal oluyorum"
+      ],
+      "responses": [
+        "Covid-19 hastalarında nadiren ishal belirtisi görülür. Başka bir belirtiniz var mı?. Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "gözBeyazCevresi",
+      "patterns": [
+        "Konjunktivit",
+        "Gözümün etrafında kırmızı kan damlacıkları var",
+        "Gözümde kan lekelenmeleri var",
+        "Gözümde iltihaplanma var"
+      ],
+      "responses": [
+        "Covid-19 hastalarında nadiren Konjunktivit (Gözde kırmızı nokta) belirtisi görülür. Başka bir belirtiniz var mı?. Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ciltDokuntusu",
+      "patterns": [
+        "Cildimde döküntüler var",
+        "El ve ayaklarımda deri döküntüsü var",
+        "El ve ayaklarımın renkleri değişti",
+        "Cildimin rengi değişti"
+      ],
+      "responses": [
+        "Covid-19 hastalarında nadiren cilt dökülmesi ve renk değişimi belirtisi görülür. Başka bir belirtiniz var mı?. Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sikayetYok",
       "patterns": [
         "Yok",
         "Hayır",
         "Bu kadar",
-        "Bitti"
+        "Şikayetim yok",
+        "Başka bir şikayetim yok",
+        "Şikayetlerim bu kadar"
       ],
       "responses": [
-        "Virüsü kapmış olabilme ihtimalinizi araştırıyorum",
-        "Kontrolleri gerçekleştiriyorum"
+        "Sonuçlarınız bu şekildedir."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "maske",
+      "patterns": [
+        "Maskem yok",
+        "Maske takmıyorum",
+        "Maskem bitti",
+        "Maske nereden alabilirim"
+      ],
+      "responses": [
+        "Eczaneler veya marketlerden maske temin edebilirsiniz. Maske takmak sizi ve çevrenizdeki insanları korumakta yardımcı olacaktır."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "eldiven",
+      "patterns": [
+        "Eldivenim yok",
+        "Eldiven takmıyorum",
+        "Eldivenim bitti",
+        "Eldiven nereden alabilirim"
+      ],
+      "responses": [
+        "Eczaneler veya marketlerden eldiven temin edebilirsiniz. Eldiven kullanırken dikkat etmelisiniz."
       ],
       "context_set": ""
     },
@@ -196,7 +379,10 @@
       "tag": "bulasma",
       "patterns": [
         "Covid-19 nasıl bulaşır ?",
-        "Yen, Koronavirüs nasıl bulaşır ?"
+        "Nasıl bulaşır ?",
+        "Bulaşma durumu var mı ?",
+        "Nasıl yayılır ?",
+        "Yeni Koronavirüs nasıl bulaşır ?"
       ],
       "responses": [
         "Hasta bireylerin öksürmeleri aksırmaları ile ortama saçılan damlacıkların solunması ile bulaşır. Hastaların solunum parçacıkları ile kirlenmiş yüzeylere dokunulduktan sonra ellerin yıkanmadan yüz, göz, burun veya ağıza götürülmesi ile de virüs alınabilir. Kirli ellerle göz, burun veya ağıza temas etmek risklidir.",
@@ -516,10 +702,10 @@
       "context_set": ""
     },
     {
-      "tag": "bağışıklık",
+      "tag": "bagisiklik",
       "patterns": [
         "Bağışıklık güçlendirici internette satılan ilaçlardan edinmeli miyim ?",
-        "Nasıl bağışıklığımı arttırırım?"
+        "Nasıl bağışıklığımı arttırırım ?"
       ],
       "responses": [
         "Covid19 hastalığı etki eşiğinde bağışıklık oldukça önemlidir. Bu yüzden ek bir alerjik reaksiyon vb. gösterme durumlarına karşı temkinli olmak adına doktorunuza başvurunuz.",
@@ -528,7 +714,7 @@
       "context_set": ""
     },
     {
-      "tag": "kına",
+      "tag": "kina",
       "patterns": [
         "Kına Covid19 virüsüne etki eder mi?"
       ],
