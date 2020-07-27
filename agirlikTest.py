@@ -78,33 +78,25 @@ def covidRiskDurumu(covidOlasilik):
     return riskDurumu
 
 
-def chat():
-    print("Chatbot ile konuşmaya başlayabilirsiniz (quit yazarak çıkabilir ve sonucunuzu öğrenebilirsiniz.)!")
-    print(
-        "Şikayetiniz(varsa) sırayla yazabilirsiniz. Vermiş olduğunuz bilgilere göre covid19 risk durumunuz hesaplanacaktır.")
+def chat(message):
     cevapListesi = []
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            covidOlasilikDurumu = covidOlasilik(cevapListesi)
-            print("Covid19 risk durumunuz: %{0}".format(covidOlasilikDurumu))
-            print(covidRiskDurumu(covidOlasilikDurumu))
-            break
-        results = model.predict(np.asanyarray([bag_of_words(inp, words)]))[0]
-        # print(results)
-        results_index = numpy.argmax(results)
-        tag = labels[results_index]
 
-        if results[results_index] > 0.85:
+    if message.lower() == "quit":
+        covidOlasilikDurumu = covidOlasilik(cevapListesi)
+        return "Covid19 risk durumunuz: %{0}".format(covidOlasilikDurumu)+"\n"+covidRiskDurumu(covidOlasilikDurumu)
+        
+    results = model.predict(np.asanyarray([bag_of_words(message, words)]))[0]
+    # print(results)
+    results_index = numpy.argmax(results)
+    tag = labels[results_index]
 
-            for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    cevapListesi.append(tg['tag'])
-                    responses = tg['responses']
-
-            print(random.choice(responses))
-        else:
-            print("Tam olarak anlayamadım")
-
-
-chat()
+    if results[results_index] > 0.85:
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                cevapListesi.append(tg['tag'])
+                responses = tg['responses']
+                
+        return random.choice(responses)
+    
+    else:
+        return "Tam olarak anlayamadım"
