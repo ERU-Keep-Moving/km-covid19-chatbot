@@ -23,6 +23,13 @@ def send(a):
         ChatLog.yview(END)
         
         EntryBox.mark_set("insert", "1.1")
+        
+    if msg.lower() == "hoşçakal" or msg.lower() == "kapat":
+        ChatLog.config(state=NORMAL)
+        ChatLog.insert(END, "\n\n\nUygulamayı kullandığınız için teşekkürler!")
+        ChatLog.config(state=DISABLED)
+        EntryBox.config(state=DISABLED)
+        
            
         
 def startPos():
