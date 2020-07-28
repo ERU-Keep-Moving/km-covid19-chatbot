@@ -16,7 +16,12 @@ Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında **
 |Library|    json       |`pip install json`      |
 |Library|    numpy       |`pip install numpy`      |
 
-
+> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda bdogukandagli@gmail.com adresinden iletişime geçebilirsiniz
 
   
+# Abstract
+
+Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir.
+
+
 
