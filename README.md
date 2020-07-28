@@ -3,6 +3,7 @@ This project developed for Teknofest 2020 (Türkçe Doğal Dil İşleme Yarışm
 <br/><br/>
 Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında **Keep Moving** ekibi tarafından geliştirilmiştir.
 <br/><br/>
+![KM-Logo](https://drive.google.com/file/d/1GDJjLnd9KMeCFf8YYFSuPAwfZhFGxTIO/view?usp=sharing)
 # Requirements
 <br/> <br/>
 |    Type            |Name                          |Install                         |
