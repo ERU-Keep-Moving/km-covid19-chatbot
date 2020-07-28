@@ -40,7 +40,7 @@
     {
       "tag": "sonuc",
       "patterns": [
-        "Sonuçlarım neledir ?",
+        "Sonuçlarım nelerdir ?",
         "Sonuçlar",
         "Sonuç",
         "Sonuçlar nasıl ?",
@@ -62,8 +62,8 @@
         "Sen neysin ?",
         "Bana nasıl yardımcı olabilirsin ?",
         "Maharetlerin nelerdir ?",
-        "Sen ne işe yarasın ?",
-        "Bana ne gibi faydalar sağlaya bilirsin ?",
+        "Sen ne işe yararsın ?",
+        "Bana ne gibi faydalar sağlayabilirsin ?",
         "Bu uygulamadan bana bahset",
         "Bu chatBot ne ise yarar?"
       ],
