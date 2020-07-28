@@ -109,7 +109,7 @@ def covidRisk(covidOlasilik):
 
 
 def sonuc(olasilik, risk):
-    return "Covid19 risk durumunuz: %{0}\n{1}".format(olasilik, risk)
+    return "Covid19 risk durumunuz: %{0}\n{1}".format(round(olasilik), risk)
 
 
 cevapListesi = []
@@ -119,7 +119,7 @@ def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
     if message.lower() == "kapat":
-        return sonuc(covidOlasilikDurumu, covidRiskDurumu)
+       return sonuc(covidOlasilikDurumu, covidRiskDurumu)
     results = model.predict(np.asanyarray([bag_of_words(message, words)]))[0]
     # print(results)
     results_index = np.argmax(results)
