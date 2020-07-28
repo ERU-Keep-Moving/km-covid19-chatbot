@@ -2,7 +2,6 @@ import agirlikTest
 import time
 import sys
 
-# Creating GUI with tkinter
 from tkinter import *
 
 
