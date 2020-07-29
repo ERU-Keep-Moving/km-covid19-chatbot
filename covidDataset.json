@@ -7,15 +7,51 @@
         "Merhaba",
         "Selamın Aleyküm",
         "Selamlar",
-        "Nasılsın",
-        "Naber",
         "Selam",
-        "Günaydın"
+        "Günaydın",
+        "İyi günler"
       ],
       "responses": [
         "Merhabalar :)",
         "Seni gördüğüme sevindim",
         "Nasıl yardımcı olabilirim ?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "halHatir",
+      "patterns": [
+        "Nasıl gidiyor",
+        "Ne haber",
+        "Ne var ne yok",
+        "Nasılsın",
+        "Naber",
+        "Nörün"
+      ],
+      "responses": [
+        "İyiyim. Teşekkür ederim beni düşündüğünüz için. Nasıl yardımcı olabilirim ?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "vakitCevap",
+      "patterns": [
+        "İyi akşamlar",
+        "İyi geceler",
+        "İyi öğlenler",
+        "İyi ikindiler",
+        "iyi akşamlar",
+        "iyi geceler",
+        "iyi öğlenler",
+        "iyi ikindiler",
+        "Hayırlı günler",
+        "Sabah şerifleriniz hayır olsun",
+        "Hayırlı akşamlar",
+        "Hayırlı sabahlar",
+        "Hayırlı geceler"
+      ],
+      "responses": [
+        "Teşekkürler. Sizede."
       ],
       "context_set": ""
     },
@@ -30,7 +66,9 @@
         "Tekrar görüşmek üzere",
         "Ben gidiyorum",
         "Bay Bay",
-        "Görüşmek üzere"
+        "Görüşmek üzere",
+        "Kendine iyi bak",
+        "Kib bye"
       ],
       "responses": [
         "İyi Günler. Durumunuz değerlendiriliyor."
@@ -47,7 +85,8 @@
         "Sonuçlar görüntüle",
         "Risk durumum nedir ?",
         "Covid-19 risk oranım nedir ?",
-        "Risk durumum yüzde kaç ?"
+        "Covid19 risk oranım nedir ?",
+        "Riskim ne kadar ?"
       ],
       "responses": [
         "Sonuçlarınız bu şekildedir."
@@ -76,6 +115,7 @@
       "tag": "korunma",
       "patterns": [
         "Covid19’dan nasıl korunabilirim?",
+        "Covid-19’dan nasıl korunabilirim?",
         "Virüsten nasıl korunabilirim?",
         "Nasıl korunabilirim?",
         "Hasta olmamak için neler yapmalıyım?"
@@ -140,6 +180,7 @@
         "Ateşim 38 derecenin üzerinde",
         "Ateşim yüksek",
         "Başım alev gibi yanıyor",
+        "Yanıyorum",
         "Vücudum çok sıcak"
       ],
       "responses": [
@@ -163,8 +204,8 @@
         "Koku kaybım var"
       ],
       "responses": [
-        "Koku alamamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
-        "Koku alamama sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+        "Koku veya tat alamamanız iyi bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Koku veya tat alamama belirtisine ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -179,7 +220,7 @@
         "Öksürük var"
       ],
       "responses": [
-        "Öksürmeniz pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Öksürmeniz halinde makenizi takınız ve bu iyi bir durum olamayabilir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
         "Öksürük sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
@@ -208,7 +249,7 @@
         "Hareket ederken bacaklarım ve kollarım ağrıyor"
       ],
       "responses": [
-        "Hareket kaybı yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Hareket kaybı yaşamanız kritik olabilir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
         "Hareket kaybı sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
@@ -238,7 +279,7 @@
         "Yorgunum"
       ],
       "responses": [
-        "Halsizlik yaşamanız pek iyi bir bir durum değil. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+        "Halsizlik olmanı Covid-19 belirtilerinden birisidir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -266,7 +307,7 @@
         "Ara ara göğüs ağrılarım oluyor"
       ],
       "responses": [
-        "Covid-19 hastalarında göğüs ağrıları görülebiliyor. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+        "Covid-19 hastalarında göğüs ağrıları görülebilmektedir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -279,7 +320,7 @@
         "Bazen boğazım ağrıyor"
       ],
       "responses": [
-        "Covid-19 hastalarında nadiren boğaz ağrısı belirtisi görülür. Başka bir belirtiniz var mı?. Buna göre Covid-19 olma riskinizi analiz edeceğim."
+        "Covid-19 hastalarında ciddi oradan boğaz ağrısı belirtisi görülebiliyor. Başka bir belirtiniz var mı?. Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -341,6 +382,7 @@
       "patterns": [
         "Maskem yok",
         "Maske takmıyorum",
+        "Maske kullanmıyorum",
         "Maskem bitti",
         "Maske nereden alabilirim"
       ],
@@ -367,8 +409,22 @@
       "patterns": [
         "Covid-19 nedir ?",
         "Yeni Koronavirüs nedir ?",
+        "Yeni Korona virüs nedir ?",
+        "Korona virüs nedir ?",
+        "Koronavirüs nedir ?",
         "Hastalık hakkında bana bilgi verir misin ?",
-        "Covid nedir ?"
+        "Covid nedir ?",
+        "Covid19 nedir ?",
+        "covid19",
+        "kovid19",
+        "Covid19",
+        "Kovid19",
+        "covid-19",
+        "kovid-19",
+        "Covid-19",
+        "Kovid-19",
+        "Kovid19 nedir ?",
+        "Kovid-19 nedir ?"
       ],
       "responses": [
         "Yeni Koronavirüs (COVID-19), ilk olarak Çin’in Vuhan Eyaleti’nde Aralık ayının sonlarında solunum yolu belirtileri (ateş, öksürük, nefes darlığı) gelişen bir grup hastada yapılan araştırmalar sonucunda 13 Ocak 2020’de tanımlanan bir virüstür. Koronavirüs hastalığına COVID-19 neden olur."
@@ -379,6 +435,7 @@
       "tag": "bulasma",
       "patterns": [
         "Covid-19 nasıl bulaşır ?",
+        "Covid19 nasıl bulaşır ?",
         "Nasıl bulaşır ?",
         "Bulaşma durumu var mı ?",
         "Nasıl yayılır ?",
@@ -394,7 +451,11 @@
       "tag": "tani",
       "patterns": [
         "Covid-19 tanısı nasıl konulur ?",
+        "Covid-19 tanısı nasıl koyulur ?",
+        "Covid19 tanısı nasıl koyulur ?",
+        "Covid19 tanısı nasıl konulur ?",
         "Yeni Koronavirüs tanısı nasıl konulur ?",
+        "Yeni Koronavirüs tanısı nasıl koyulur ?",
         "Tanı nasıl konulur ?",
         "Ülkemizde testler mevcut mu ?",
         "Ülkemizde tanı yapılabilir mi ?",
@@ -424,6 +485,7 @@
       "tag": "antibiyotik",
       "patterns": [
         "Antibiyotikler Covid-19 enfeksiyonunu önleyebilir mi veya tedavi edebilir mi ?",
+        "Antibiyotikler Covid19 enfeksiyonunu önleyebilir mi veya tedavi edebilir mi ?",
         "Antibiyotikler Yeni Koronavirüs enfeksiyonunu önleyebilir mi veya tedavi edebilir mi ?",
         "Antibiyotikler tedavi edebilir mi ?",
         "Antibiyotik kullanabilir miyim ?",
@@ -432,7 +494,7 @@
         "Virüsler antibiyotikler ile tedavi edilebilir mi ?"
       ],
       "responses": [
-        "Hayır, antibiyotikler virüslere etki etmez, sadece bakterilere karşı etkilidir. Yeni Koronavirüs (2019-nCoV) bir virüstür ve bu nedenle enfeksiyonu önlemek veya tedavi etmek amacıyla antibiyotikler kullanılmamalıdır."
+        "Antibiyotikler virüslere etki etmez, sadece bakterilere karşı etkilidir. Yeni Koronavirüs (2019-nCoV) bir virüstür ve bu nedenle enfeksiyonu önlemek veya tedavi etmek amacıyla antibiyotikler kullanılmamalıdır."
       ],
       "context_set": ""
     },
@@ -440,6 +502,7 @@
       "tag": "kulucka",
       "patterns": [
         "Covid-19 kuluçka süresi ne kadardır ?",
+        "Covid19 kuluçka süresi ne kadardır ?",
         "Yeni Koronavirüs kuluçka süresi ne kadardır ?",
         "Kuluçka süresi ne kadardır ?",
         "İnkübasyon süresi ne kadardır ?"
@@ -453,8 +516,10 @@
       "tag": "belirtiler",
       "patterns": [
         "Covid-19 belirtileri nelerdir ?",
+        "Covid19 belirtileri nelerdir ?",
         "Yeni Koronavirüs belirtileri nelerdir ?",
         "Covid-19 hangi hastalıkları oluşturur ?",
+        "Covid19 hangi hastalıkları oluşturur ?",
         "Yeni Koronavirüs hangi hastalıkları oluşturur ?",
         "Belirtileri nelerdir ?",
         "Hastalıkları nelerdir ?"
@@ -468,6 +533,7 @@
       "tag": "etkiGruplari",
       "patterns": [
         "Covid-19 kimleri daha fazla etkiler ?",
+        "Covid19 kimleri daha fazla etkiler ?",
         "Yeni Koronavirüs kimleri daha fazla etkiler ?",
         "Kimleri daha fazla etkiler ?",
         "Kimler daha fazla risk altında ?",
@@ -484,6 +550,7 @@
       "patterns": [
         "Ani ölümlere neden olur mu ?",
         "Covid-19 ani ölümlere neden olur mu ?",
+        "Covid19 ani ölümlere neden olur mu ?",
         "Yeni Koronavirüs ani ölümlere neden olur mu ?",
         "Ani ölüm olabilir mi ?",
         "Aniden ölüp düşen kişiler gerçek mi ?",
@@ -502,6 +569,7 @@
         "Ülkemizde ilk vaka ne zaman tespit edildi ?",
         "Ülkemizde vaka var mıdır ?",
         "Türkiye'de belirlenen ilk Covid-19 vakası ne zaman tespit edildi ?",
+        "Türkiye'de belirlenen ilk Covid19 vakası ne zaman tespit edildi ?",
         "İlk vaka hangi tarihte tespit edildi ?",
         "Vaka sayılarını kim yayınlamaktadır ?",
         "Türkiye'de belirlenen ilk Yeni Koronavirüs vakası ne zaman tespit edildi ?"
@@ -515,6 +583,7 @@
       "tag": "sirke",
       "patterns": [
         "Sirke kullanımı Covid-19 enfeksiyonunu önleyebilir mi ?",
+        "Sirke kullanımı Covid19 enfeksiyonunu önleyebilir mi ?",
         "Sirke enfeksiyonu önleye bilir mi ?",
         "Sirke ile enfeksiyom engellene bilir mi ?",
         "Sirke kullanımı ne kadar etiklidir ?",
@@ -529,8 +598,10 @@
       "tag": "tuzluSuBurun",
       "patterns": [
         "Burnumu tuzlu suyla yıkamak Covid-19 enfeksiyonundan beni korur mu ?",
+        "Burnumu tuzlu suyla yıkamak Covid19 enfeksiyonundan beni korur mu ?",
         "Burnumu tuzlu suyla yıkamak Yeni Koronavirüs enfeksiyonundan beni korur mu ?",
         "Tuzlu su Covid-19 için etkili midir ?",
+        "Tuzlu su Covid19 için etkili midir ?",
         "Burunu tuzlu su kullanımı ile temizlemek korur mu ?"
       ],
       "responses": [
@@ -542,8 +613,11 @@
       "tag": "hayvanTasima",
       "patterns": [
         "Evimde bulunan hayvanda Covid-19 var mıdır ?",
+        "Evimde bulunan hayvanda Covid19 var mıdır ?",
         "Evcil hayvanlardan Covid-19 bulaşır mı ?",
-        "Evcil hayavanlar Covid-19 taşır mı ?"
+        "Evcil hayvanlardan Covid19 bulaşır mı ?",
+        "Evcil hayavanlar Covid-19 taşır mı ?",
+        "Evcil hayavanlar Covid19 taşır mı ?"
       ],
       "responses": [
         "Evde bakılan kedi/köpek gibi evcil hayvanların Yeni Koronavirüsla (COVID-19) enfekte olması beklenmemektedir. Ancak evcil hayvanlarla temas sonrası her zaman için ellerin su ve sabunla yıkanması gereklidir. Böylece hayvanlardan bulaşabilecek diğer enfeksiyonlara karşı korunma sağlanacaktır."
@@ -554,7 +628,9 @@
       "tag": "yurtlar",
       "patterns": [
         "Tatil dönüşü yurduma dönüyorum Covid-19 kapabilir miyim ?",
+        "Tatil dönüşü yurduma dönüyorum Covid19 kapabilir miyim ?",
         "Covid-19 yurtlarda kalan öğrencilere bulaşabilir mi ?",
+        "Covid19 yurtlarda kalan öğrencilere bulaşabilir mi ?",
         "Öğrenciler için yurtlar güvenli midir ?",
         "Yurtlarda kalmak ne kadar güvenlidir ?"
       ],
@@ -580,9 +656,12 @@
       "tag": "cocukOkul",
       "patterns": [
         "Çocuğumu okula gönderiyorum Covid-19 kapabilir mi ?",
+        "Çocuğumu okula gönderiyorum Covid19 kapabilir mi ?",
         "Çocuğum için okul ne kadar güvenlidir ?",
         "Çocuklar okullardan Covid-19 kapabilir mi ?",
-        "Covid-19 okullardan yayılır mı ?"
+        "Çocuklar okullardan Covid19 kapabilir mi ?",
+        "Covid-19 okullardan yayılır mı ?",
+        "Covid19 okullardan yayılır mı ?"
       ],
       "responses": [
         "Çocuğunuz okulda grip, nezle ve soğuk algınlığına neden olan virüsler ile karşılaşabilir. Bu kapsamda okullara hastalık konusunda gerekli bilgilendirme Sağlık Bakanlığı tarafından yapılmıştır. MEB tarafından koruma ve kontrol önlemleri uygulanmaktadır."
@@ -594,8 +673,11 @@
       "patterns": [
         "Covid-19'dan nasıl korunabilirim ?",
         "Covid-19'dan korunma önlemleri nelerdir ?",
+        "Covid19'dan nasıl korunabilirim ?",
+        "Covid19'dan korunma önlemleri nelerdir ?",
         "Genel enfeksiyon korunma önlemleri nelerdir ?",
-        "Covid-19'dan korunmak mümkün müdür ?"
+        "Covid-19'dan korunmak mümkün müdür ?",
+        "Covid19'dan korunmak mümkün müdür ?"
       ],
       "responses": [
         "El temizliğine dikkat edilmelidir. Eller en az 20 saniye boyunca sabun ve suyla yıkanmalı, sabun ve suyun olmadığı durumlarda alkol bazlı el antiseptikleri kullanılmalıdır. Antiseptik veya antibakteriyel içeren sabun kullanmaya gerek yoktur, normal sabun yeterlidir.Öksürme veya hapşırma sırasında burun ve ağızın tek kullanımlık kağıt mendil ile örtülmesi, kağıt mendilin bulunmadığı durumlarda ise dirsek içinin kullanılması, mümkünse kalabalık yerlere girilmemesi önerilir."
@@ -672,7 +754,9 @@
       "tag": "deniz",
       "patterns": [
         "Denizden Covid19 bulaşır mı ?",
-        "Covid19 akarsulardan bulaşır mı ?"
+        "Covid19 akarsulardan bulaşır mı ?",
+        "Denizden Covid-19 bulaşır mı ?",
+        "Covid-19 akarsulardan bulaşır mı ?"
       ],
       "responses": [
         "Kesin olmamakla beraber hastalık genelinde denizden herhangi bir bulaş tespit edilmemiştir."
@@ -683,6 +767,7 @@
       "tag": "havuz",
       "patterns": [
         "Havuzdan Covid19 bulaşır mı ?",
+        "Havuzdan Covid-19 bulaşır mı ?",
         "Yüzerken bulaşır mı ?"
       ],
       "responses": [
@@ -694,6 +779,7 @@
       "tag": "havuz",
       "patterns": [
         "Havuzdan Covid19 bulaşır mı ?",
+        "Havuzdan Covid-19 bulaşır mı ?",
         "Yüzerken bulaşır mı ?"
       ],
       "responses": [
@@ -716,7 +802,9 @@
     {
       "tag": "kina",
       "patterns": [
-        "Kına Covid19 virüsüne etki eder mi?"
+        "Kına Covid19 virüsüne etki eder mi ?",
+        "Kına Covid-19 virüsüne etki eder mi ?",
+        "Kına korur mu ?"
       ],
       "responses": [
         "Hayır hiçbir etkisi yoktur",
@@ -742,6 +830,7 @@
       "tag": "n95Maske",
       "patterns": [
         "N95 maske ne zaman takılmalıdır ?",
+        "N95 maske kullanımı nedir ?",
         "N95 maske hangi durumlarda takılmalıdır"
       ],
       "responses": [
