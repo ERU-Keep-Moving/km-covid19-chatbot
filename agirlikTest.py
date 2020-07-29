@@ -48,18 +48,13 @@ def bag_of_words(s, words):
                 bag[i] = 1
     return np.array(bag)
 
-#Covid19 olma olasılığının hesaplanması
+# Covid19 olma olasılığının hesaplanması
 def covidOlasilik(cevapListesi):
     covidScore = 0
     toplamPuan = 100
-    if "umre" in cevapListesi:
-        covidScore += 2
+    riskCarpani = 0
     if "hastane" in cevapListesi:
-        covidScore += 1
-    if "yurtdisi" in cevapListesi:
-        covidScore += 2
-    if "bogazAgrisi" in cevapListesi:
-        covidScore += 4
+        covidScore += 3
     if "ishal" in cevapListesi:
         covidScore += 4
     if "gözBeyazCevresi" in cevapListesi:
@@ -68,25 +63,38 @@ def covidOlasilik(cevapListesi):
         covidScore += 4
     if "kokuTat" in cevapListesi:
         covidScore += 4
-    if "basAgrisi" in cevapListesi:
+    if ("basAgrisi" in cevapListesi) or ("bogazAgrisi" in cevapListesi):
         covidScore += 4
+    if ("umre" in cevapListesi) or ("yurtdisi" in cevapListesi):
+        covidScore += 5
     if "ates" in cevapListesi:
-        covidScore += 7
+        covidScore += 12
+        riskCarpani += 1
     if "oksuruk" in cevapListesi:
-        covidScore += 7
+        covidScore += 12
+        riskCarpani += 1
     if "halsizlik" in cevapListesi:
-        covidScore += 7
+        covidScore += 12
+        riskCarpani += 1
     if "nefes" in cevapListesi:
-        covidScore += 15
-    if "hareketKaybi" in cevapListesi:
-        covidScore += 15
-    if "konusmaZorlugu" in cevapListesi:
-        covidScore += 15
+        covidScore += 12
+        riskCarpani += 1
+    if ("konusmaZorlugu" in cevapListesi) or ("hareketKaybi" in cevapListesi):
+        covidScore += 12
+        riskCarpani += 1
     if "gogusAgrisi" in cevapListesi:
-        covidScore += 15
-    return (covidScore / toplamPuan) * 100
+        covidScore += 12
+        riskCarpani += 1
 
-#Kullanıcının çıkmak istediği ve sonuçları görmek istediği durumların kontrolü
+    sonucOlasilik = (covidScore / toplamPuan) * 100
+    if riskCarpani >= 3:
+        sonucOlasilik = sonucOlasilik * 2
+    elif sonucOlasilik >= 100:
+        sonucOlasilik = 95
+    return sonucOlasilik
+
+
+# Kullanıcının çıkmak istediği ve sonuçları görmek istediği durumların kontrolü
 def cikisDurumu(cevapListesi):
     cikisKontrol = False
     if "sonuc" in cevapListesi:
@@ -97,7 +105,8 @@ def cikisDurumu(cevapListesi):
         cikisKontrol = True
     return cikisKontrol
 
-#Risk oranının hesaplanması
+
+# Risk oranının hesaplanması
 def covidRisk(covidOlasilik):
     if 30 >= covidOlasilik:
         riskDurumu = "Düşük risk grubunda bulunuyorsunuz."
@@ -109,7 +118,7 @@ def covidRisk(covidOlasilik):
 
 
 def sonuc(olasilik, risk):
-    return "Covid19 risk durumunuz: %{0}\n{1}".format(olasilik, risk)
+    return "Covid19 risk durumunuz: %{0}\n{1}".format(round(olasilik), risk)
 
 
 cevapListesi = []
@@ -118,7 +127,7 @@ cevapListesi = []
 def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
-    if message.lower() == "hoşçakal" or message.lower() == "kapat":
+    if message.lower() == "kapat":
         return sonuc(covidOlasilikDurumu, covidRiskDurumu)
     results = model.predict(np.asanyarray([bag_of_words(message, words)]))[0]
     # print(results)
