@@ -161,6 +161,10 @@ def sonuc(olasilik, risk):
 cevapListesi = []
 
 
+def reset():
+    print("reset")
+
+
 def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
