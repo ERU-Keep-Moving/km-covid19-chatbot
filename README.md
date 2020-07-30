@@ -23,19 +23,19 @@
     <td valign="center">
      <b>Covid-19 Olasılığının Hesaplanması</b>
     </td>
-    <td valign="center"> <img src="images/covidScore.gif" border="0" width="520px" height="520px"> </td>
+    <td valign="center"> <img src="images/covidScore.gif" border="0" width="520px" height="530px"> </td>
   </tr>
   <tr>
     <td valign="center">
      <b>Covid-19 Genel Bilgi Sorgulama</b>
     </td>
-    <td valign="center"> <img src="images/covidBilgiler.gif" border="0" width="520px" height="520px"> </td>
+    <td valign="center"> <img src="images/covidBilgiler.gif" border="0" width="530px" height="530px"> </td>
   </tr>
   <tr>
     <td valign="center">
      <b>Türkiye Güncel Vaka Sayısı Öğrenme</b>
     </td>
-    <td valign="center"> <img src="images/covidVakaSayisi.gif" border="0" width="520px" height="520px"> </td>
+    <td valign="center"> <img src="images/covidVakaSayisi.gif" border="0" width="530px" height="530px"> </td>
   </tr>
 </table>
 <br/> <br/>
@@ -91,6 +91,8 @@
 |Library|    snowballstemmer v2.0.0       |`pip install snowballstemmer==2.0.0` |
 |Library|    tensorflow v1.14.0       |`pip install tensorflow=1.14.0`      |
 |Library|    keras v2.3.1       |`pip install keras==2.3.1`      |
+|Library|    matplotlib 3.3.0   |`pip install matplotlib`      |
+|Library|    pandas 1.1.0.      |`pip install pandas`      |
 |Library|    json        |`pip install json`      |
 |Library|    numpy       |`pip install numpy`      |
 |Library|    requests    |`pip install requests`   |
@@ -98,4 +100,4 @@
 |Library|    lxml 4.5.2  |`pip install lxml`      |
 
 <br/> <br/>
-> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda bdogukandagli@gmail.com ve kaankarabulutt1@gmail.com adresinden iletişime geçebilirsiniz
+> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda ekip ile iletişime geçebilirsiniz.
