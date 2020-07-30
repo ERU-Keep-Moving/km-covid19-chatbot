@@ -45,7 +45,7 @@ base.title("Keep Moving")
 base.geometry("510x520")
 base.resizable(width=FALSE, height=FALSE)
 base.configure(background='lightgray')
-base.iconphoto(False, PhotoImage(file='logo.png'))
+base.iconphoto(False, PhotoImage(file='images/logo.png'))
 
 ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial", )
 ChatLog.config(state=DISABLED)
