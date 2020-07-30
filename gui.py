@@ -5,7 +5,6 @@ from tkinter import *
 def send(a):
     msg = EntryBox.get("1.0", 'end-1c').strip()
     EntryBox.delete("0.0", END)
-    print(msg)
     if msg != '':
         ChatLog.config(state=NORMAL)
         ChatLog.insert(END, "\nSiz: " + msg + '\n')
