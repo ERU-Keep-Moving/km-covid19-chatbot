@@ -1,9 +1,16 @@
-# km-covid19-chatbot
-This project developed for Teknofest 2020 (Türkçe Doğal Dil İşleme Yarışması) by **Keep Moving** team.
-<br/><br/>
-Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında **Keep Moving** ekibi tarafından geliştirilmiştir.
-<br/><br/>
-![](images/KM-Logo.png)
+# acikhack-keepmoving-covid19-chatbot
+
+<table width="400" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100" height="100" valign="top"> <img src="images/logo.png" border="0" width="150px"> </td>
+    <td valign="top">
+     Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında <b>Keep Moving</b> ekibi tarafından geliştirilmiştir.
+    <br/><br/>
+     This project developed for Teknofest 2020 (Türkçe Doğal Dil İşleme Yarışması) by <b>Keep Moving</b> team.
+    </td>
+  </tr>
+</table>
+
 ![](images/deneme.gif)
 # Requirements
 <br/> <br/>
