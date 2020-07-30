@@ -170,8 +170,6 @@ def chat(message):
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
     if message.lower() == "kapat":
         return sonuc(covidOlasilikDurumu, covidRiskDurumu)
-    if message.lower() == "tablo":
-        return covid19("Turkey")
     results = model.predict(np.asanyarray([bag_of_words(message, words)]))[0]
     # print(results)
     results_index = np.argmax(results)
@@ -182,6 +180,8 @@ def chat(message):
             if tg['tag'] == tag:
                 cevapListesi.append(tg['tag'])
                 responses = tg['responses']
+                if tg['tag'] == "tablo":
+                     return covid19("Turkey")
             if cikisDurumu(cevapListesi):
                 return sonuc(covidOlasilikDurumu, covidRiskDurumu)
         return random.choice(responses)
