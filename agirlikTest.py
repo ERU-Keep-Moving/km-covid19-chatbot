@@ -126,7 +126,7 @@ def covidOlasilik(cevapListesi):
     sonucOlasilik = (covidScore / toplamPuan) * 100
     if riskCarpani >= 3:
         sonucOlasilik = sonucOlasilik * 2
-    elif sonucOlasilik >= 100:
+    if sonucOlasilik >= 100:
         sonucOlasilik = 95
     return sonucOlasilik
 
