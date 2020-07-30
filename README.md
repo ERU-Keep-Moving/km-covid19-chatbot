@@ -1,8 +1,9 @@
 # acikhack-keepmoving-covid19-chatbot
 
-<table width="400" border="0" cellpadding="0" cellspacing="0">
+
+<table width="400" border="1" cellspacing="1" cellpadding="1" margin-left="auto" margin-right="auto">
   <tr>
-    <td width="100" height="100" valign="top"> <img src="images/logo.png" border="0" width="150px"> </td>
+    <td valign="top"> <img src="images/logo.png" border="0" width="100px"> </td>
     <td valign="top">
      Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında <b>Keep Moving</b> ekibi tarafından geliştirilmiştir.
     <br/><br/>
@@ -11,7 +12,27 @@
   </tr>
 </table>
 
-![](images/deneme.gif)
+<table width="500" border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto">
+  <tr>
+    <td valign="top">
+     Gif Covid Score İçin
+    </td>
+    <td valign="top"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+  </tr>
+  <tr>
+    <td valign="top">
+     Gif Bilgilendirme İçin
+    </td>
+    <td valign="top"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+  </tr>
+  <tr>
+    <td valign="top">
+     Gif Vaka Sayıları İçin
+    </td>
+    <td valign="top"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+  </tr>
+</table>
+
 # Requirements
 <br/> <br/>
 |    Type            |Name                          |Install                         |
