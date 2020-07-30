@@ -20,21 +20,21 @@ Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlar
 <table width="500" border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto">
   <tr>
     <td valign="center">
-     Gif Covid Score İçin
+     <b>Covid-19 Olasılığının Hesaplanması</b>
     </td>
-    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/covidScore.gif" border="0" width="520px" height="520px"> </td>
   </tr>
   <tr>
     <td valign="center">
-     Gif Bilgilendirme İçin
+     <b>Covid-19 Hakkında Genel Bilgiler Öğrenme</b>
     </td>
-    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/covidBilgiler.gif" border="0" width="520px" height="520px"> </td>
   </tr>
   <tr>
     <td valign="center">
-     Gif Vaka Sayıları İçin
+     <b>Türkiye Güncel Vaka Sayısı Öğrenme</b>
     </td>
-    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/covidVakaSayisi.gif" border="0" width="520px" height="520px"> </td>
   </tr>
 </table>
 <br/> <br/>
