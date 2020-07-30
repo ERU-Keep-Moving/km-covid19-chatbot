@@ -13,28 +13,29 @@
 <br/> <br/>
 
 # Özet
-Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir. Kullanıcı Covid-19 hakkında merak ettiği soruları sohbet uygulamasına sorarak gerekli cevapları alabilir. Türkiye'ye ait günlük vaka, iyileşen hasta, vefat sayılarını sorarak öğrenebilir. Sohbet botunun sorulan sorulardan çıkarımlar yapabilmesi için yapay sinir ağında ve doğal dil işleme kütüphanesi olan NLTK'dan faydanılmıştır. Türkçe olarak geliştirilmiş bir sohbet botudur. 
+<p style="text-align:center;"> Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir. Kullanıcı Covid-19 hakkında merak ettiği soruları sohbet uygulamasına sorarak gerekli cevapları alabilir. Türkiye'ye ait günlük vaka, iyileşen hasta, vefat sayılarını sorarak öğrenebilir. Sohbet botunun sorulan sorulardan çıkarımlar yapabilmesi için yapay sinir ağında ve doğal dil işleme kütüphanesi olan NLTK'dan faydanılmıştır. Türkçe olarak geliştirilmiş bir sohbet botudur.
+</p>
 <br/> <br/>
 
 # Proje Ön Gösterim
 <table width="500" border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto">
   <tr>
     <td valign="center">
-     Gif Covid Score İçin
+     <b>Covid-19 Olasılığının Hesaplanması</b>
     </td>
-    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/covidScore.gif" border="0" width="520px" height="530px"> </td>
   </tr>
   <tr>
     <td valign="center">
-     Gif Bilgilendirme İçin
+     <b>Covid-19 Genel Bilgi Sorgulama</b>
     </td>
-    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/covidBilgiler.gif" border="0" width="530px" height="530px"> </td>
   </tr>
   <tr>
     <td valign="center">
-     Gif Vaka Sayıları İçin
+     <b>Türkiye Güncel Vaka Sayısı Öğrenme</b>
     </td>
-    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/covidVakaSayisi.gif" border="0" width="530px" height="530px"> </td>
   </tr>
 </table>
 <br/> <br/>
@@ -90,6 +91,8 @@ Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlar
 |Library|    snowballstemmer v2.0.0       |`pip install snowballstemmer==2.0.0` |
 |Library|    tensorflow v1.14.0       |`pip install tensorflow=1.14.0`      |
 |Library|    keras v2.3.1       |`pip install keras==2.3.1`      |
+|Library|    matplotlib 3.3.0   |`pip install matplotlib`      |
+|Library|    pandas 1.1.0.      |`pip install pandas`      |
 |Library|    json        |`pip install json`      |
 |Library|    numpy       |`pip install numpy`      |
 |Library|    requests    |`pip install requests`   |
@@ -97,4 +100,4 @@ Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlar
 |Library|    lxml 4.5.2  |`pip install lxml`      |
 
 <br/> <br/>
-> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda bdogukandagli@gmail.com ve kaankarabulutt1@gmail.com adresinden iletişime geçebilirsiniz
+> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda ekip ile iletişime geçebilirsiniz.
