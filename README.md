@@ -13,8 +13,11 @@ Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında **
 |Library|    snowballstemmer v2.0.0       |`pip install snowballstemmer==2.0.0` |
 |Library|    tensorflow v1.14.0       |`pip install tensorflow=1.14.0`      |
 |Library|    keras v2.3.1       |`pip install keras==2.3.1`      |
-|Library|    json       |`pip install json`      |
+|Library|    json        |`pip install json`      |
 |Library|    numpy       |`pip install numpy`      |
+|Library|    requests    |`pip install requests`   |
+|Library|    bs4 0.0.1   |`pip install bs4`        |
+|Library|    lxml 4.5.2  |`pip install lxml`      |
 
 > **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda bdogukandagli@gmail.com adresinden iletişime geçebilirsiniz
 
