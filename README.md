@@ -1,4 +1,4 @@
-# acikhack-keepmoving-covid19-chatbot
+# Acıkhack2-keepmoving-covid19-chatbot
 
 <table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
   <tr>
@@ -10,6 +10,11 @@
     </td>
   </tr>
 </table>
+<br/> <br/>
+
+# Özet
+Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir. Kullanıcı Covid-19 hakkında merak ettiği soruları sohbet uygulamasına sorarak gerekli cevapları alabilir. Türkiye'ye ait günlük vaka, iyileşen hasta, vefat sayılarını sorarak öğrenebilir. Sohbet botunun sorulan sorulardan çıkarımlar yapabilmesi için yapay sinir ağında ve doğal dil işleme kütüphanesi olan NLTK'dan faydanılmıştır. Türkçe olarak geliştirilmiş bir sohbet botudur. 
+<br/> <br/>
 
 # Proje Ön Gösterim
 <table width="500" border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto">
@@ -32,6 +37,7 @@
     <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
   </tr>
 </table>
+<br/> <br/>
 
 # Youtube Sunumu
 <table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
@@ -40,6 +46,16 @@
     <td valign="center"><a href="https://www.youtube.com/" target="_blank"> Sunum için tıklayınız </a></td>
   </tr>
 </table>
+<br/> <br/>
+
+# Kullanılan Yapay Sinir Ağı Modeli
+<img src="images/network.png">
+<br/> <br/>
+
+# Yapay Sinir Ağı Eğitimine Ait Başarım ve Kayıp Grafikleri
+<img src="images/egitimBasarim.jpg">
+<img src="images/egitimKayip.jpg">
+<br/> <br/>
 
 # Proje Ekibi
 <table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
@@ -50,13 +66,13 @@
   </tr>
   <tr>
     <td valign="center"> <b> Ekip Üyesi </b> </td>
-    <td valign="center"> Kaan KARABULUT</td>
-    <td valign="center"> mail@gmail.com </td>
+    <td valign="center"> Mehmet Kaan KARABULUT</td>
+    <td valign="center"> kaankarabulutt1@gmail.com </td>
   </tr>
   <tr>
     <td valign="center"> <b> Ekip Üyesi </b> </td>
     <td valign="center"> Murat Can TANRIVERDİ </td>
-    <td valign="center"> mail@gmail.com </td>
+    <td valign="center"> muratcantanriverdi96@gmail.com </td>
   </tr>
   <tr>
     <td valign="center"> <b> Ekip Üyesi </b> </td>
@@ -64,9 +80,9 @@
     <td valign="center"> halilakbuluteru@gmail.com </td>
   </tr>
 </table>
-
-# Requirements
 <br/> <br/>
+
+# Proje İçin Gerekli Olan Kütüphaneler
 |    Type            |Name                          |Install                         |
 |----------------|-------------------------------|-----------------------------|
 |Language|    Python 3.6.7       |`www.python.org`      |
@@ -80,9 +96,5 @@
 |Library|    bs4 0.0.1   |`pip install bs4`        |
 |Library|    lxml 4.5.2  |`pip install lxml`      |
 
-> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda bdogukandagli@gmail.com adresinden iletişime geçebilirsiniz
-
-  
-# Abstract
-
-Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir.
+<br/> <br/>
+> **Not:** Kütüphaneler ve çalıştırma konusunda hata almanız durumunda bdogukandagli@gmail.com ve kaankarabulutt1@gmail.com adresinden iletişime geçebilirsiniz
