@@ -8,8 +8,7 @@
         "Selamın Aleyküm",
         "Selamlar",
         "Selam",
-        "Günaydın",
-        "İyi günler"
+        "Günaydın"
       ],
       "responses": [
         "Merhabalar :)",
@@ -41,7 +40,7 @@
         "İyi öğlenler",
         "İyi ikindiler",
         "iyi akşamlar",
-        "iyi geceler",
+        "iyi günler",
         "iyi öğlenler",
         "iyi ikindiler",
         "Hayırlı günler",
@@ -51,7 +50,7 @@
         "Hayırlı geceler"
       ],
       "responses": [
-        "Teşekkürler. Sizede."
+        "Teşekkürler. Size de."
       ],
       "context_set": ""
     },
