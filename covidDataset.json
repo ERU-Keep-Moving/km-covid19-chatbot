@@ -18,6 +18,18 @@
       "context_set": ""
     },
     {
+      "tag": "mantiksizSorular",
+      "patterns": [
+        "Neden ",
+        "Nasıl ",
+        "Niçin "
+      ],
+      "responses": [
+        "Sorununuzu daha ayrıntılı yazınız."
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "halHatir",
       "patterns": [
         "Nasıl gidiyor",
@@ -242,7 +254,7 @@
         "Yemeklerin tadını alamıyorum",
         "Yemekler tatsız geliyor",
         "Ağzımın tadı yok",
-        "Aüız tadım yok",
+        "Ağız tadım yok",
         "Burnum çalışmıyor",
         "Koku kaybım var"
       ],
