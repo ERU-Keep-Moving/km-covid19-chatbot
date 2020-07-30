@@ -1,6 +1,4 @@
 import agirlikTest
-import time
-import sys
 from tkinter import *
 
 
