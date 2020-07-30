@@ -8,6 +8,8 @@ from snowballstemmer import TurkishStemmer
 import numpy as np
 import random
 import json
+import requests
+import bs4
 
 nltk.download('punkt')
 
@@ -47,6 +49,41 @@ def bag_of_words(s, words):
             if w == se:
                 bag[i] = 1
     return np.array(bag)
+
+
+def covid19(country):
+    res = requests.get("https://www.worldometers.info/coronavirus/#countries")
+    soup = bs4.BeautifulSoup(res.text, 'lxml')
+    index = -1
+    data = soup.select('tr td')
+    for i in range(len(data)):
+        if data[i].text.lower() == country.lower():
+            index = i
+            break
+    gunlukTablo=""
+    for i in range(7):
+        if i == 0:
+            gunlukTablo="\nÜlke adı: " + str(data[i + index].text)
+        elif i == 1:
+            gunlukTablo=gunlukTablo+'\n'+"Toplam vaka: " + str(data[i + index].text)
+        elif i == 2:
+            if data[i + index].text == '':
+                gunlukTablo=gunlukTablo+'\n'+"Yeni vaka: 0"
+            else:
+                gunlukTablo=gunlukTablo+'\n'+"Yeni vaka: " + str(data[i + index].text)
+        elif i == 3:
+            gunlukTablo=gunlukTablo+'\n'+"Toplam ölüm: " + str(data[i + index].text)
+        elif i == 4:
+            if data[i + index].text == '':
+                gunlukTablo=gunlukTablo+'\n'+"Yeni ölüm: 0"
+            else:
+                gunlukTablo=gunlukTablo+'\n'+"Yeni ölüm: " + str(data[i + index].text)
+        elif i == 5:
+            gunlukTablo=gunlukTablo+'\n'+"Toplam iyileşen: " + str(data[i + index].text)
+        elif i == 6:
+            gunlukTablo=gunlukTablo+'\n'+"Yeni iyileşen: " + str(data[i + index].text)
+    return gunlukTablo
+
 
 # Covid19 olma olasılığının hesaplanması
 def covidOlasilik(cevapListesi):
@@ -89,7 +126,7 @@ def covidOlasilik(cevapListesi):
     sonucOlasilik = (covidScore / toplamPuan) * 100
     if riskCarpani >= 3:
         sonucOlasilik = sonucOlasilik * 2
-    elif sonucOlasilik >= 100:
+    if sonucOlasilik >= 100:
         sonucOlasilik = 95
     return sonucOlasilik
 
@@ -124,6 +161,10 @@ def sonuc(olasilik, risk):
 cevapListesi = []
 
 
+def reset():
+    cevapListesi.clear()
+    
+
 def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
@@ -139,6 +180,8 @@ def chat(message):
             if tg['tag'] == tag:
                 cevapListesi.append(tg['tag'])
                 responses = tg['responses']
+                if tg['tag'] == "tablo":
+                     return covid19("Turkey")
             if cikisDurumu(cevapListesi):
                 return sonuc(covidOlasilikDurumu, covidRiskDurumu)
         return random.choice(responses)
