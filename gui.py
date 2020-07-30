@@ -2,6 +2,8 @@ import agirlikTest
 from tkinter import *
 
 
+#Kullanıcının yazdığı mesajları ağırlık dosyasının bulunduğu script kodlarına
+#yönlendirir ve tasarımda istenilen değişiklikleri sağlar.
 def send(a):
     msg = EntryBox.get("1.0", 'end-1c').strip()
     EntryBox.delete("0.0", END)
@@ -23,7 +25,8 @@ def send(a):
         ChatLog.config(state=DISABLED)
         EntryBox.config(state=DISABLED)
 
-
+#Uygulamanın ilk başlangıcı ve sohbetten sonra yeniden başlanması için gereken
+#komutları içermektedir.
 def startPos():
     agirlikTest.reset()
     ChatLog.config(state=NORMAL)
@@ -42,6 +45,7 @@ def startPos():
     EntryBox.config(state=NORMAL)
     
 
+#Arayüzün tasarımıyla ilgili kodları içermektedir.
 base = Tk()
 base.title("Keep Moving Covid-19 ChatBot")
 base.geometry("510x520")
