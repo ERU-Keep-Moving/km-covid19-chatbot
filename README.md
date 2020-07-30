@@ -1,9 +1,8 @@
 # acikhack-keepmoving-covid19-chatbot
 
-
-<table width="400" border="1" cellspacing="1" cellpadding="1" margin-left="auto" margin-right="auto">
+<table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
   <tr>
-    <td valign="top"> <img src="images/logo.png" border="0" width="100px"> </td>
+    <td valign="center"> <img src="images/logo.png" border="0" width="100px"> </td>
     <td valign="top">
      Bu proje Teknofest 2020 Türkçe Doğal Dil İşleme Yarışması kapsamında <b>Keep Moving</b> ekibi tarafından geliştirilmiştir.
     <br/><br/>
@@ -12,24 +11,57 @@
   </tr>
 </table>
 
+# Proje Ön Gösterim
 <table width="500" border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto">
   <tr>
-    <td valign="top">
+    <td valign="center">
      Gif Covid Score İçin
     </td>
-    <td valign="top"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
   </tr>
   <tr>
-    <td valign="top">
+    <td valign="center">
      Gif Bilgilendirme İçin
     </td>
-    <td valign="top"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
   </tr>
   <tr>
-    <td valign="top">
+    <td valign="center">
      Gif Vaka Sayıları İçin
     </td>
-    <td valign="top"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+    <td valign="center"> <img src="images/deneme.gif" border="0" width="500px" height="200px"> </td>
+  </tr>
+</table>
+
+# Youtube Sunumu
+<table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
+  <tr>
+    <td valign="center">Youtube Sunum Linki </td>
+    <td valign="center"><a href="https://www.youtube.com/" target="_blank"> Sunum için tıklayınız </a></td>
+  </tr>
+</table>
+
+# Proje Ekibi
+<table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
+  <tr>
+    <td valign="center"> <b> Ekip Kaptanı </b> </td>
+    <td valign="center"> Burak Doğukan DAĞLI</td>
+    <td valign="center"> bdogukandagli@gmail.com </td>
+  </tr>
+  <tr>
+    <td valign="center"> <b> Ekip Üyesi </b> </td>
+    <td valign="center"> Kaan KARABULUT</td>
+    <td valign="center"> mail@gmail.com </td>
+  </tr>
+  <tr>
+    <td valign="center"> <b> Ekip Üyesi </b> </td>
+    <td valign="center"> Murat Can TANRIVERDİ </td>
+    <td valign="center"> mail@gmail.com </td>
+  </tr>
+  <tr>
+    <td valign="center"> <b> Ekip Üyesi </b> </td>
+    <td valign="center"> Halil AKBULUT</td>
+    <td valign="center"> halilakbuluteru@gmail.com </td>
   </tr>
 </table>
 
