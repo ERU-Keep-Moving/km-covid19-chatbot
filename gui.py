@@ -1,8 +1,4 @@
 import agirlikTest
-import time
-import sys
-
-# Creating GUI with tkinter
 from tkinter import *
 
 
@@ -12,7 +8,7 @@ def send(a):
     print(msg)
     if msg != '':
         ChatLog.config(state=NORMAL)
-        ChatLog.insert(END, "\nYou: " + msg + '\n')
+        ChatLog.insert(END, "\nSiz: " + msg + '\n')
         ChatLog.config(foreground="#442265", font=("Verdana", 10))
 
         res = agirlikTest.chat(msg)
@@ -30,21 +26,29 @@ def send(a):
 
 
 def startPos():
+    agirlikTest.reset()
     ChatLog.config(state=NORMAL)
+    ChatLog.delete(0.0,END)
     ChatLog.insert(END,
-                   "Chatbot ile konuşmaya başlayabilirsiniz ('kapat' yazarak çıkabilir ve sonucunuzu öğrenebilirsiniz.)!"'\n\n')
+                   "Chatbot ile konuşmaya başlayabilirsiniz.\n('kapat' yazarak çıkabilir ve sonucunuzu "
+                   "öğrenebilirsiniz.)"'\n\n')
     ChatLog.insert(END,
-                   "Şikayetiniz(varsa) sırayla yazabilirsiniz. Vermiş olduğunuz bilgilere göre covid19 risk durumunuz hesaplanacaktır."'\n\n')
+                   "Şikayetiniz(varsa) sırayla yazabilirsiniz.\nÖrneğin; 'başım ağrıyor, öksürüyorum, halsizim' gibi "
+                   "belirtilerinizi \niletebilirsiniz.\n\nVermiş olduğunuz bilgilere göre Covid-19 risk "
+                   "durumunuz \nhesaplanacaktır."'\n'""
+                   "\nÜlkemizdeki güncel vaka sayısı ve Covid-19 ile ilgili diğer bilgileri de \nöğrenmeniz mümkün.\n")
+
     ChatLog.config(foreground="#442265", font=("Verdana", 10))
     ChatLog.config(state=DISABLED)
-
+    EntryBox.config(state=NORMAL)
+    
 
 base = Tk()
-base.title("Keep Moving")
+base.title("Keep Moving Covid-19 ChatBot")
 base.geometry("510x520")
 base.resizable(width=FALSE, height=FALSE)
 base.configure(background='lightgray')
-base.iconphoto(False, PhotoImage(file='logo.png'))
+base.iconphoto(False, PhotoImage(file='images/logo.png'))
 
 ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial", )
 ChatLog.config(state=DISABLED)
@@ -56,13 +60,16 @@ EntryBox = Text(base, bd=2, bg="white", width="29", height="5", font="Arial")
 EntryBox.bind("<Return>", send)
 
 var = StringVar()
-var.set("Mesajınızı yazdıktan sonra ENTER tuşuna basınız!")
+var.set("Mesajınızı yazdıktan sonra ENTER tuşuna basınız!\nYeniden başlamak için buraya tıklayabilirsiniz.")
 Label = Label(base, textvariable=var, relief=RAISED)
+Label.bind("<Button-1>",lambda e,startPos=startPos:startPos())
+
 
 scrollbar.place(x=476, y=6, height=356)
 ChatLog.place(x=6, y=6, height=356, width=470)
 EntryBox.place(x=6, y=370, height=80, width=487)
 Label.place(x=6, y=460, height=50, width=487)
+
 
 startPos()
 
