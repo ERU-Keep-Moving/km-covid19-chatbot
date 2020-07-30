@@ -8,7 +8,7 @@ def send(a):
     print(msg)
     if msg != '':
         ChatLog.config(state=NORMAL)
-        ChatLog.insert(END, "\nYou: " + msg + '\n')
+        ChatLog.insert(END, "\nSiz: " + msg + '\n')
         ChatLog.config(foreground="#442265", font=("Verdana", 10))
 
         res = agirlikTest.chat(msg)
@@ -30,16 +30,21 @@ def startPos():
     ChatLog.config(state=NORMAL)
     ChatLog.delete(0.0,END)
     ChatLog.insert(END,
-                   "Chatbot ile konuşmaya başlayabilirsiniz ('kapat' yazarak çıkabilir ve sonucunuzu öğrenebilirsiniz.)!"'\n\n')
+                   "Chatbot ile konuşmaya başlayabilirsiniz.\n('kapat' yazarak çıkabilir ve sonucunuzu "
+                   "öğrenebilirsiniz.)"'\n\n')
     ChatLog.insert(END,
-                   "Şikayetiniz(varsa) sırayla yazabilirsiniz. Vermiş olduğunuz bilgilere göre covid19 risk durumunuz hesaplanacaktır."'\n\n')
+                   "Şikayetiniz(varsa) sırayla yazabilirsiniz.\nÖrneğin; 'başım ağrıyor, öksürüyorum, halsizim' gibi "
+                   "belirtilerinizi \niletebilirsiniz.\n\nVermiş olduğunuz bilgilere göre Covid-19 risk "
+                   "durumunuz \nhesaplanacaktır."'\n'""
+                   "\nÜlkemizdeki güncel vaka sayısı ve Covid-19 ile ilgili diğer bilgileri de \nöğrenmeniz mümkün.\n")
+
     ChatLog.config(foreground="#442265", font=("Verdana", 10))
     ChatLog.config(state=DISABLED)
     EntryBox.config(state=NORMAL)
     
 
 base = Tk()
-base.title("Keep Moving")
+base.title("Keep Moving Covid-19 ChatBot")
 base.geometry("510x520")
 base.resizable(width=FALSE, height=FALSE)
 base.configure(background='lightgray')
