@@ -13,7 +13,8 @@
 <br/> <br/>
 
 # Özet
-Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir. Kullanıcı Covid-19 hakkında merak ettiği soruları sohbet uygulamasına sorarak gerekli cevapları alabilir. Türkiye'ye ait günlük vaka, iyileşen hasta, vefat sayılarını sorarak öğrenebilir. Sohbet botunun sorulan sorulardan çıkarımlar yapabilmesi için yapay sinir ağında ve doğal dil işleme kütüphanesi olan NLTK'dan faydanılmıştır. Türkçe olarak geliştirilmiş bir sohbet botudur. 
+<p style="text-align:center;"> Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlardan yola çıkarak bir sohbet uygulaması geliştirilmiştir. Kullanıcının uygulama kapsamında projeyi çalıştırıp, semptomlarını sohbet eder bir biçimde ifade etmesi sonucun tanımlanıp geri dönüt olarak verilmesi için yeterlidir. Kullanıcı Covid-19 hakkında merak ettiği soruları sohbet uygulamasına sorarak gerekli cevapları alabilir. Türkiye'ye ait günlük vaka, iyileşen hasta, vefat sayılarını sorarak öğrenebilir. Sohbet botunun sorulan sorulardan çıkarımlar yapabilmesi için yapay sinir ağında ve doğal dil işleme kütüphanesi olan NLTK'dan faydanılmıştır. Türkçe olarak geliştirilmiş bir sohbet botudur.
+</p>
 <br/> <br/>
 
 # Proje Ön Gösterim
@@ -26,7 +27,7 @@ Günümüz başlıca problemlerinden olan Covid-19 virüsü hakkında semptomlar
   </tr>
   <tr>
     <td valign="center">
-     <b>Covid-19 Hakkında Genel Bilgiler Öğrenme</b>
+     <b>Covid-19 Genel Bilgi Sorgulama</b>
     </td>
     <td valign="center"> <img src="images/covidBilgiler.gif" border="0" width="520px" height="520px"> </td>
   </tr>
