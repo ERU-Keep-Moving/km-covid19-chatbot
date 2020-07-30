@@ -162,8 +162,8 @@ cevapListesi = []
 
 
 def reset():
-    print("reset")
-
+    cevapListesi.clear()
+    
 
 def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)

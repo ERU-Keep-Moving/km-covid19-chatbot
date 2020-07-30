@@ -28,6 +28,7 @@ def send(a):
 
 
 def startPos():
+    agirlikTest.reset()
     ChatLog.config(state=NORMAL)
     ChatLog.delete(0.0,END)
     ChatLog.insert(END,
