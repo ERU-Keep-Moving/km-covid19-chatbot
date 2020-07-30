@@ -8,18 +8,25 @@ import pandas as pd
 import numpy
 import random
 import json
+import matplotlib.pyplot as plt
 
+
+#Json dosyası olarak oluşturulan Covid-19 metin veri setini yükleme.
 nltk.download('punkt')
 with open(r"covidDataset.json") as file:
     data = json.load(file)
 
 
+#Türkçe kelimeler için stemmer
 stemmer=TurkishStemmer()
+
+#Değişken tanımlamaları
 words = []
 labels = []
 docs_x = []
 docs_y = []
 
+#Cümlelerin kelimelere ve etiketlere ayrılması
 for intent in data["intents"]:
     for pattern in intent["patterns"]:
         wrds = nltk.word_tokenize(pattern)
@@ -30,15 +37,19 @@ for intent in data["intents"]:
     if intent["tag"] not in labels:
         labels.append(intent["tag"])
 
+#Cümlelerin küçük harfe alınması ve ayrılması
 words = [stemmer.stemWord(w.lower()) for w in words if w != "?"]
 words = sorted(list(set(words)))
 
+#Etiketlerin alfabetik sıralanması
 labels = sorted(labels)
 
+#Eğitime ait giriş ve çıkış değişkenleri tanımlanması
 training = []
 output = []
 out_empty = [0 for _ in range(len(labels))]
 
+#Kelimelerin 0-1 mantığına göre ayrılması.
 for x, doc in enumerate(docs_x):
     bag = []
 
@@ -56,26 +67,29 @@ for x, doc in enumerate(docs_x):
     training.append(bag)
     output.append(output_row)
 
-
+#Eğitim giriş ve çıkış değerlerini dizi olarak ayarlama
 training = numpy.array(training)
 output = numpy.array(output)
 
-print(labels)
-print(len(labels))
+
+#Keras ile yapay sinir ağı modelinin inşa edilmesi.
 
 model = Sequential()
-model.add(Dense(16,input_shape=(len(training[0]),),activation="relu"))
+model.add(Dense(32,input_shape=(len(training[0]),),activation="relu"))
 model.add(Dense(16,activation="relu"))
+model.add(Dense(8,activation="relu"))
+model.add(Dense(16,activation="relu"))
+model.add(Dense(32,activation="relu"))
 model.add(Dropout(0.2))
 model.add(Dense(len(labels),activation="softmax"))
 model.summary()
 model.compile(loss='categorical_crossentropy',optimizer=Adam(lr=.001),metrics=['acc'])
 history=model.fit(training, output,epochs=300, verbose=2,batch_size=4)
 
+#Eğitime ait ağırlık dosyasının kaydedilmesi. 
 model.save('covid.h5')
 
-import matplotlib.pyplot as plt
-
+#Eğitime ait başarım ve bayıp grafiklerinin çizilmesi.
 acc=history.history['acc']
 loss=history.history['loss']
 
