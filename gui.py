@@ -1,8 +1,6 @@
 import agirlikTest
 import time
 import sys
-
-# Creating GUI with tkinter
 from tkinter import *
 
 
@@ -31,13 +29,15 @@ def send(a):
 
 def startPos():
     ChatLog.config(state=NORMAL)
+    ChatLog.delete(0.0,END)
     ChatLog.insert(END,
                    "Chatbot ile konuşmaya başlayabilirsiniz ('kapat' yazarak çıkabilir ve sonucunuzu öğrenebilirsiniz.)!"'\n\n')
     ChatLog.insert(END,
                    "Şikayetiniz(varsa) sırayla yazabilirsiniz. Vermiş olduğunuz bilgilere göre covid19 risk durumunuz hesaplanacaktır."'\n\n')
     ChatLog.config(foreground="#442265", font=("Verdana", 10))
     ChatLog.config(state=DISABLED)
-
+    EntryBox.config(state=NORMAL)
+    
 
 base = Tk()
 base.title("Keep Moving")
@@ -56,13 +56,16 @@ EntryBox = Text(base, bd=2, bg="white", width="29", height="5", font="Arial")
 EntryBox.bind("<Return>", send)
 
 var = StringVar()
-var.set("Mesajınızı yazdıktan sonra ENTER tuşuna basınız!")
+var.set("Mesajınızı yazdıktan sonra ENTER tuşuna basınız!\nYeniden başlamak için buraya tıklayabilirsiniz.")
 Label = Label(base, textvariable=var, relief=RAISED)
+Label.bind("<Button-1>",lambda e,startPos=startPos:startPos())
+
 
 scrollbar.place(x=476, y=6, height=356)
 ChatLog.place(x=6, y=6, height=356, width=470)
 EntryBox.place(x=6, y=370, height=80, width=487)
 Label.place(x=6, y=460, height=50, width=487)
+
 
 startPos()
 
