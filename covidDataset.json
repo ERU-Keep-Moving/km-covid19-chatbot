@@ -33,6 +33,17 @@
       "context_set": ""
     },
     {
+      "tag": "hastalik",
+      "patterns": [
+        "Hastayım",
+        "Hasta hissediyorum kendimi"
+      ],
+      "responses": [
+        "Belirtileriniz nelerdir ?"
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "vakitCevap",
       "patterns": [
         "İyi akşamlar",
@@ -40,9 +51,10 @@
         "İyi öğlenler",
         "İyi ikindiler",
         "iyi akşamlar",
-        "iyi günler",
+        "iyi geceler",
         "iyi öğlenler",
         "iyi ikindiler",
+		    "iyi günler",
         "Hayırlı günler",
         "Sabah şerifleriniz hayır olsun",
         "Hayırlı akşamlar",
@@ -176,6 +188,7 @@
       "tag": "ates",
       "patterns": [
         "Ateşim var",
+        "Ateşim düşmüyor",
         "Ateşim 38 derecenin üzerinde",
         "Ateşim yüksek",
         "Başım alev gibi yanıyor",
@@ -185,6 +198,35 @@
       "responses": [
         "Ateşinizin olması pek iyi bir durum değil. Başka bir belirtiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
         "Ateşe ek olarak başka bir şikayetiniz var mı ? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tahris",
+      "patterns": [
+        "Ellerim tahriş oldu",
+        "Ellerim çok tahriş oldu",
+        "Ellerim tahriş olmuş"
+      ],
+      "responses": [
+        "Ellerinizi tahriş olmasının nedeni çok sık el dezenfektanı kullanıyor olmanız olabilir. Sadece elleriniz kirlendiği zaman veya insanların ile temasa geçtiniz zaman kullanmanızı öneririm."
+        
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "acikmaSusama",
+      "patterns": [
+        "Açıktım",
+        "Açım",
+        "Çok açım",
+        "Çok açıktım",
+        "Susadım",
+        "Çok susadım",
+        "Susuzum"
+      ],
+      "responses": [
+        "Acıkmanız veya susamınızın Covid-19 hastalığı ile ilgili bir durum değildir. Lütfen yeme ve içmenize dikkat ediniz. "
       ],
       "context_set": ""
     },
@@ -199,7 +241,9 @@
         "Tat alamıyorum",
         "Yemeklerin tadını alamıyorum",
         "Yemekler tatsız geliyor",
-        "Ağızımın tatı yok",
+        "Ağzımın tadı yok",
+        "Aüız tadım yok",
+        "Burnum çalışmıyor",
         "Koku kaybım var"
       ],
       "responses": [
@@ -213,14 +257,61 @@
       "patterns": [
         "Çok öksürüyorum",
         "Öksürük",
+		    "Öksürüyorum",
+		    "Öksürüyorum da",
+		    "Öksürüğüm var",
         "Kuru öksürüğüm var",
         "Ara ara kuru öksürüğüm var",
         "Geçmeyen öksürüğüm var",
         "Öksürük var"
       ],
       "responses": [
-        "Öksürmeniz halinde makenizi takınız ve bu iyi bir durum olamayabilir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
+        "Öksürmeniz halinde maskenizi takınız. Bu iyi bir durum olmayabilir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim.",
         "Öksürük sorununa ek olarak başka bir şikayetiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tablo",
+      "patterns": [
+        "Tablo",
+        "Günlük vaka sayısı nedir",
+        "Vaka sayısı nedir",
+        "Bugün kaç tane vaka var ",
+        "Türkiye vaka sayısı nedir ",
+        "Toplam vaka sayısı nedir ",
+        "Toplam vaka kaç tane",
+        "Bugünkü vaka sayısı nedir ",
+        "Toplam kaç vaka var"
+      ],
+      "responses": [
+        "Türkiye'deki günlük korona virüs vaka sayısı bu şekildedir. "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hariciAgrılar",
+      "patterns": [
+        "Karnım ağrıyor",
+        "Midem ağrıyor",
+        "Kulağım ağrıyor",
+        "Burnum Ağrıyor",
+        "Gözüm ağrıyor",
+        "Bileğim ağrıyor",
+        "Parmağım ağrıyor",
+        "Kalbim ağrıyor",
+        "Ayağım ağrıyor",
+        "Elim ağrıyor",
+        "Ellerim ağrıyor",
+        "Ayağım ağrıyor",
+        "Midem ağrıyor",
+        "Dilim ağrıyor",
+        "Ayaklarım ağrıyor",
+        "Dişim ağrıyor",
+        "Yüzüm ağrıyor"
+      ],
+      "responses": [
+        "Bu şikayetinizin Covid-19 ile alakası olmayabilir. "
       ],
       "context_set": ""
     },
@@ -275,10 +366,17 @@
         "Çok halsizim",
         "Bu sıralar çok halsizim",
         "Halsizim",
+        "Biraz halsizim",
+        "Aşırı derecede yorunum",
+        "Hergün yorgunum",
+        "Yoruldum",
+        "Yoruluyorum",
+        "Neden halsizim",
+        "Neden yoruluyorum",
         "Yorgunum"
       ],
       "responses": [
-        "Halsizlik olmanı Covid-19 belirtilerinden birisidir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+        "Halsizlik veya yorgunluk olması Covid-19 belirtilerinden birisidir. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -289,10 +387,15 @@
         "Kafam ağrıyor",
         "Başım ağrıyor",
         "Ağrılarım geçmiyor",
-        "Ara ara ağrılarım oluyor"
+        "Kolum  ağrıyor",
+        "Kollarım  ağrıyor",
+        "Bacağım  ağrıyor",
+        "Bacaklarım  ağrıyor",
+        "Ara ara ağrılarım oluyor",
+        "Her yerim ağrıyor"
       ],
       "responses": [
-        "Covid-19 hastalarında nadiren baş ağrıları veya ağrılar görülebiliyor. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
+        "Covid-19 hastalarında nadiren ağrılar görülebiliyor. Başka bir belirtiniz var mı? Buna göre Covid-19 olma riskinizi analiz edeceğim."
       ],
       "context_set": ""
     },
@@ -314,6 +417,8 @@
       "tag": "bogazAgrisi",
       "patterns": [
         "Boğazım ağrıyor",
+        "Boğaz ağrım var",
+        "Boğazım kaşınıyor",
         "Yutkunurken zorlanıyorum",
         "Ara ara boğazım ağrıyor",
         "Bazen boğazım ağrıyor"
@@ -352,6 +457,7 @@
       "tag": "ciltDokuntusu",
       "patterns": [
         "Cildimde döküntüler var",
+        "Derim dökülüyor",
         "El ve ayaklarımda deri döküntüsü var",
         "El ve ayaklarımın renkleri değişti",
         "Cildimin rengi değişti"
@@ -615,8 +721,8 @@
         "Evimde bulunan hayvanda Covid19 var mıdır ?",
         "Evcil hayvanlardan Covid-19 bulaşır mı ?",
         "Evcil hayvanlardan Covid19 bulaşır mı ?",
-        "Evcil hayavanlar Covid-19 taşır mı ?",
-        "Evcil hayavanlar Covid19 taşır mı ?"
+        "Evcil hayvanlar Covid-19 taşır mı ?",
+        "Evcil hayvanlar Covid19 taşır mı ?"
       ],
       "responses": [
         "Evde bakılan kedi/köpek gibi evcil hayvanların Yeni Koronavirüsla (COVID-19) enfekte olması beklenmemektedir. Ancak evcil hayvanlarla temas sonrası her zaman için ellerin su ve sabunla yıkanması gereklidir. Böylece hayvanlardan bulaşabilecek diğer enfeksiyonlara karşı korunma sağlanacaktır."
@@ -671,6 +777,7 @@
       "tag": "korunmaOnlemleri",
       "patterns": [
         "Covid-19'dan nasıl korunabilirim ?",
+        "Covid-19'dan nasıl korunulur ?",
         "Covid-19'dan korunma önlemleri nelerdir ?",
         "Covid19'dan nasıl korunabilirim ?",
         "Covid19'dan korunma önlemleri nelerdir ?",
@@ -728,28 +835,6 @@
       "context_set": ""
     },
     {
-      "tag": "bebekler",
-      "patterns": [
-        "Bebekler de hastalık ne ölçüde seyretmektedir?",
-        "Bebeklerde belirtiler aynı mıdır ?"
-      ],
-      "responses": [
-        "Bebeklerde belirtiler daha hafif seyretmekle birlikte ateş daha sık görülmektedir."
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "bebekler",
-      "patterns": [
-        "Bebekler de ne gibi önlemler alınabilir?",
-        "Bebeklerde kurallar aynı mıdır ?"
-      ],
-      "responses": [
-        "Genel temizliğe daha fazla dikkat edilmeli ve emzik gibi bebeklerle fazla teması olan nesneler sık sık dezenfekte edilmeli."
-      ],
-      "context_set": ""
-    },
-    {
       "tag": "deniz",
       "patterns": [
         "Denizden Covid19 bulaşır mı ?",
@@ -759,18 +844,6 @@
       ],
       "responses": [
         "Kesin olmamakla beraber hastalık genelinde denizden herhangi bir bulaş tespit edilmemiştir."
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "havuz",
-      "patterns": [
-        "Havuzdan Covid19 bulaşır mı ?",
-        "Havuzdan Covid-19 bulaşır mı ?",
-        "Yüzerken bulaşır mı ?"
-      ],
-      "responses": [
-        "Havuzlarda klorlamaya ve temizliğe önem verilmelidir. Ancak yine de bununla alakalı kesin bir yargı mevcut değildir."
       ],
       "context_set": ""
     },
