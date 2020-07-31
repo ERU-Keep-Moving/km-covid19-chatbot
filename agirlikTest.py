@@ -13,15 +13,18 @@ import bs4
 
 nltk.download('punkt')
 
+# Json dosyası olarak oluşturulan Covid-19 metin veri setini yükleme
 with open(r"covidDataset.json", encoding="utf8") as file:
     data = json.load(file)
 
+# Değişken tanımlamaları
 stemmer = TurkishStemmer()
 words = []
 labels = []
 docs_x = []
 docs_y = []
 
+# Cümlelerin kelimelere ve etiketlere ayrılması
 for intent in data["intents"]:
     for pattern in intent["patterns"]:
         wrds = nltk.word_tokenize(pattern)
@@ -32,14 +35,18 @@ for intent in data["intents"]:
     if intent["tag"] not in labels:
         labels.append(intent["tag"])
 
+# Cümlelerin küçük harfe alınması ve ayrılması
 words = [stemmer.stemWord(w.lower()) for w in words if w != "?"]
 words = sorted(list(set(words)))
 
+# Etiketlerin alfabetik sıralanması
 labels = sorted(labels)
 
+# Eğitilmiş ağırlık dosyasının yüklenmesi.
 model = load_model('covidAgirlik.h5')
 
 
+# Buradaki fonksiyon bot ile konuşan kişinin cümlelerini 1 ve 0'lar ile ifade etmesine yarıyor.
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
     s_words = nltk.word_tokenize(s)
@@ -51,6 +58,7 @@ def bag_of_words(s, words):
     return np.array(bag)
 
 
+# Güncel covid-19 tablosunun listelenmesi
 def covid19(country):
     res = requests.get("https://www.worldometers.info/coronavirus/#countries")
     soup = bs4.BeautifulSoup(res.text, 'lxml')
@@ -60,28 +68,28 @@ def covid19(country):
         if data[i].text.lower() == country.lower():
             index = i
             break
-    gunlukTablo=""
+    gunlukTablo = ""
     for i in range(7):
         if i == 0:
-            gunlukTablo="\nÜlke adı: " + str(data[i + index].text)
+            gunlukTablo = "\nÜlke adı: " + str(data[i + index].text)
         elif i == 1:
-            gunlukTablo=gunlukTablo+'\n'+"Toplam vaka: " + str(data[i + index].text)
+            gunlukTablo = gunlukTablo + '\n' + "Toplam vaka: " + str(data[i + index].text)
         elif i == 2:
             if data[i + index].text == '':
-                gunlukTablo=gunlukTablo+'\n'+"Yeni vaka: 0"
+                gunlukTablo = gunlukTablo + '\n' + "Yeni vaka: 0"
             else:
-                gunlukTablo=gunlukTablo+'\n'+"Yeni vaka: " + str(data[i + index].text)
+                gunlukTablo = gunlukTablo + '\n' + "Yeni vaka: " + str(data[i + index].text)
         elif i == 3:
-            gunlukTablo=gunlukTablo+'\n'+"Toplam ölüm: " + str(data[i + index].text)
+            gunlukTablo = gunlukTablo + '\n' + "Toplam ölüm: " + str(data[i + index].text)
         elif i == 4:
             if data[i + index].text == '':
-                gunlukTablo=gunlukTablo+'\n'+"Yeni ölüm: 0"
+                gunlukTablo = gunlukTablo + '\n' + "Yeni ölüm: 0"
             else:
-                gunlukTablo=gunlukTablo+'\n'+"Yeni ölüm: " + str(data[i + index].text)
+                gunlukTablo = gunlukTablo + '\n' + "Yeni ölüm: " + str(data[i + index].text)
         elif i == 5:
-            gunlukTablo=gunlukTablo+'\n'+"Toplam iyileşen: " + str(data[i + index].text)
+            gunlukTablo = gunlukTablo + '\n' + "Toplam iyileşen: " + str(data[i + index].text)
         elif i == 6:
-            gunlukTablo=gunlukTablo+'\n'+"Yeni iyileşen: " + str(data[i + index].text)
+            gunlukTablo = gunlukTablo + '\n' + "Yeni iyileşen: " + str(data[i + index].text)
     return gunlukTablo
 
 
@@ -154,17 +162,21 @@ def covidRisk(covidOlasilik):
     return riskDurumu
 
 
+# Covid-19 olasılık ve risk sonucunun dönderilmesi
 def sonuc(olasilik, risk):
     return "Covid19 risk durumunuz: %{0}\n{1}".format(round(olasilik), risk)
 
 
+# Kullanıcının gireceği cevaplar için liste oluşturulması
 cevapListesi = []
 
 
+# Yeniden başlatma durumu için listenin sıfırlanması
 def reset():
     cevapListesi.clear()
-    
 
+
+# Sohbet fonksiyonu
 def chat(message):
     covidOlasilikDurumu = covidOlasilik(cevapListesi)
     covidRiskDurumu = covidRisk(covidOlasilikDurumu)
@@ -181,7 +193,7 @@ def chat(message):
                 cevapListesi.append(tg['tag'])
                 responses = tg['responses']
                 if tg['tag'] == "tablo":
-                     return covid19("Turkey")
+                    return covid19("Turkey")
             if cikisDurumu(cevapListesi):
                 return sonuc(covidOlasilikDurumu, covidRiskDurumu)
         return random.choice(responses)
