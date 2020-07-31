@@ -3,16 +3,13 @@ from snowballstemmer import TurkishStemmer
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
-import numpy as np
-import pandas as pd
 import numpy
-import random
 import json
 import matplotlib.pyplot as plt
 
 # Json dosyası olarak oluşturulan Covid-19 metin veri setini yükleme.
 nltk.download('punkt')
-with open(r"covidDataset.json") as file:
+with open(r"covidDataset.json", encoding="utf-8") as file:
     data = json.load(file)
 
 # Türkçe kelimeler için stemmer
