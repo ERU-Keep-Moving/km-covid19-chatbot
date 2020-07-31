@@ -20,7 +20,7 @@
 # Çalıştırma Rehberi
 <p style="text-align:center;"> Öncelikle "Proje İçin Gerekli Olan Kütüphaneler" alanında verilen kütüphanelerin kurulum işlemlerinin tamamlanması gerekmektedir. Bunun için 2 farklı yol izleyebilirsiniz. İsterseniz hazırlamış olduğumuz gereksinimler dosyası üzerinden "pip install gereksinimler.txt komutu ile gereken tüm kütüphaneleri kurabilirsiniz. Manuel olarak kurulum yapmak isterseniz "Proje İçin Gerekli Olan Kütüphaneler" alanında belirtilen kütüphaneleri ve sürümleri ilgili komutlarla çalıştırarak kurabilirsiniz.
 </p>
-<p style="text-align:center;"> Projeyi gui.py dosyası üzerinden çalıştırmalısınız. İlgili dosyalar birbirine bağlı olup son kullanıcıya uygun olacak şekilde gui.py dosyası üzerinde sunulmaktadır. </p>
+<p style="text-align:center;"> Projeyi <b>gui.py</b> dosyası üzerinden çalıştırmalısınız. İlgili dosyalar birbirine bağlı olup son kullanıcıya uygun olacak şekilde <b>gui.py</b> dosyası üzerinde sunulmaktadır. </p>
 <br/> <br/>
 
 > **Not:** Projeye ait .exe dosyası sunum için derlenip, sizlerle paylaşılacaktır.
