@@ -22,7 +22,9 @@
 </p>
 <p style="text-align:center;"> Projeyi gui.py dosyası üzerinden çalıştırmalısınız. İlgili dosyalar birbirine bağlı olup son kullanıcıya uygun olacak şekilde gui.py dosyası üzerinde sunulmaktadır. </p>
 <br/> <br/>
+
 > **Not:** Projeye ait .exe dosyası sunum için derlenip, sizlerle paylaşılacaktır.
+
 <br/> <br/>
 
 # Proje Ön Gösterim
