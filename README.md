@@ -59,6 +59,11 @@
 </table>
 <br/> <br/>
 
+# Veri Seti Hakkında 
+<p style="text-align:center;"> Proje kapsamında ekip tarafından json formatında soru ve cevaplar için veri seti hazırlanmıştır. Veri setinde bulunan Covid-19 hakkındaki bilgiler, Sağlık Bakanlığı'nın sitesinden derlenerek elde edilmiştir. Projenin yapısı gereği Covid-19 olasılığının ve güncel verilerin hesaplanması için gerekli olan veriler ekip tarafından hazırlanmıştır. Veri setini kullanmak istiyorsanız proje içerisinde bulunan <b>covidDataset.json</b> dosyasını indirip kullanabilirsiz.</p>
+<p style="text-align:center;"> Covid-19 ile paralel hastalıklar ile alakalı da veri setini sürekli olarak güncelliyor olacağız. Böylece diğer hastalıklar konusunda da son kullanıcıya yardımcı olmayı hedeflemekteyiz.</p>
+<br/> <br/>
+
 # Kullanılan Yapay Sinir Ağı Modeli
 <img src="images/network.png">
 <br/> <br/>
