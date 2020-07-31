@@ -3,7 +3,10 @@ from snowballstemmer import TurkishStemmer
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
+import numpy as np
+import pandas as pd
 import numpy
+import random
 import json
 import matplotlib.pyplot as plt
 
