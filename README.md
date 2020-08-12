@@ -59,7 +59,7 @@
 <table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
   <tr>
     <td valign="center"> Proje Sunum Linki </td>
-    <td valign="center"><a href="https://drive.google.com/file/d/1EZNLW_SkU2hPtVfFn1HA2NU4jTNGWz3_/view?usp=sharing" target="_blank"> Sunum için tıklayınız </a></td>
+    <td valign="center"><a href="https://drive.google.com/file/d/1f8hn8W0_WO6RB2nkDFbcopYFdG-O9eVD/view?usp=sharing"> Sunum için tıklayınız </a></td>
   </tr>
 </table>
 <br/> <br/>
