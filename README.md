@@ -23,10 +23,6 @@
 <p style="text-align:center;"> Projeyi <b>gui.py</b> dosyası üzerinden çalıştırmalısınız. İlgili dosyalar birbirine bağlı olup son kullanıcıya uygun olacak şekilde <b>gui.py</b> dosyası üzerinde sunulmaktadır. </p>
 <br/> <br/>
 
-> **Not:** Projeye ait .exe dosyası sunum için derlenip, sizlerle paylaşılacaktır.
-
-<br/> <br/>
-
 # Proje Ön Gösterim
 <table width="500" border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto">
   <tr>
@@ -50,11 +46,20 @@
 </table>
 <br/> <br/>
 
-# Youtube Sunumu
+# Youtube Demo
 <table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
   <tr>
-    <td valign="center">Youtube Sunum Linki </td>
-    <td valign="center"><a href="https://www.youtube.com/" target="_blank"> Sunum için tıklayınız </a></td>
+    <td valign="center">Youtube Demo Linki </td>
+    <td valign="center"><a href="https://youtu.be/5O4wgvab7WI" target="_blank"> Sunum için tıklayınız </a></td>
+  </tr>
+</table>
+<br/> <br/>
+
+# Proje Sunum Linki
+<table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
+  <tr>
+    <td valign="center"> Proje Sunum Linki </td>
+    <td valign="center"><a href="https://drive.google.com/file/d/1EZNLW_SkU2hPtVfFn1HA2NU4jTNGWz3_/view?usp=sharing" target="_blank"> Sunum için tıklayınız </a></td>
   </tr>
 </table>
 <br/> <br/>
