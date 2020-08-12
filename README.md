@@ -55,7 +55,7 @@
 </table>
 <br/> <br/>
 
-# Proje Sunum Linki
+# Proje Sunum
 <table border="0" cellspacing="0" cellpadding="0" margin-left="auto" margin-right="auto" >
   <tr>
     <td valign="center"> Proje Sunum Linki </td>
